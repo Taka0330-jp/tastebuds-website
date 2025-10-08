@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+:root {
+    /* Color tokens */
+    --color-primary: #E6E93A;
+    --color-secondary: #000;
+    --color-bg: #F3F3F3;
+    --color-text: #2F2D2E;
+    --header-text: #fff;
+
+    /* Font family */
+    --font-heading: "Rubik", sans-serif;
+    --font-body: "Inter", sans-serif;
+
+    /* ===========================
+     HEADING
+  ============================ */
+    --fs-heading-display: clamp(2.5rem, 5vw, 3rem);
+    /* 40–48px */
+    --fs-heading-m-bold: clamp(2rem, 4vw, 2.25rem);
+    /* 32–36px */
+    --fs-heading-m: clamp(2rem, 4vw, 2.25rem);
+    --fs-heading-s: clamp(1.25rem, 2.5vw, 1.5rem);
+    /* 20–24px */
+
+    /* ===========================
+     BODY
+  ============================ */
+    --fs-body-l: clamp(1.25rem, 2.5vw, 1.5rem);
+    /* 20–24px */
+    --fs-body-m: clamp(1rem, 2vw, 1.25rem);
+    /* 16–20px */
+    --fs-body-s: clamp(0.875rem, 1.5vw, 1rem);
+    /* 14–16px */
+
+    /* ===========================
+     LINK
+  ============================ */
+    --fs-link-l: clamp(1rem, 2vw, 1.25rem);
+    /* 16–20px */
+    --fs-link-s: clamp(0.875rem, 1.5vw, 1rem);
+    /* 14–16px */
+
+    /* ===========================
+     LINE HEIGHT
+  ============================ */
+    --lh-heading: 1.2;
+    --lh-body: 1.6;
+}
