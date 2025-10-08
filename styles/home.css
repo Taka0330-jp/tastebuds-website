@@ -1,3 +1,4 @@
+/* Hero section  */
 .hero {
     position: relative;
     display: grid;
@@ -36,6 +37,22 @@
     grid-column: 2/3;
 }
 
+
+/* Tagline-strip section */
+.tagline-strip {
+    background-color: var(--color-primary);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+}
+
+.tagline-strip h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(1rem, 3vw, 2.25rem);
+}
+
 @media (max-width:640px) {
     .hero {
         grid-template-columns: 1fr;
@@ -50,5 +67,9 @@
         height: 100%;
         background-color: rgba(0, 0, 0, 0.6);
         z-index: -1;
+    }
+
+    .tagline-strip h2 {
+        font-size: clamp(1rem, 2.5vw, 1.5rem);
     }
 }
