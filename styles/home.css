@@ -53,6 +53,71 @@
     font-size: clamp(1rem, 3vw, 2.25rem);
 }
 
+/* Recent Post section */
+
+.recent-blog {
+    padding: 4rem 3rem 0;
+}
+
+#section-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    width: 100%;
+    color: var(--color-text-w);
+    background-color: var(--color-secondary);
+}
+
+.recent-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* 任意: 高さを均等にしたいなら ↓ を追加
+  grid-template-rows: repeat(6, minmax(0, 1fr));
+  min-height: 720px;
+  */
+}
+
+/* 左の大きいカード */
+.featured {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 4;
+}
+
+.featured img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* 右の3枚（クラスで明示） */
+.small {
+    grid-column: 5 / span 2;
+}
+
+.small-1 {
+    grid-row: 1 / span 2;
+}
+
+.small-2 {
+    grid-row: 3 / span 2;
+}
+
+.small-3 {
+    grid-row: 5 / span 2;
+}
+
+/* サムネの収まりを安定させるなら */
+.small img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+
+
 @media (max-width:640px) {
     .hero {
         grid-template-columns: 1fr;

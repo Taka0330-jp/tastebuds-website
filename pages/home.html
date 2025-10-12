@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/home.css">
     <script src="/scripts/hamburger.js" defer></script>
+    <script type="module" src="/scripts/recentPost.js"></script>
 </head>
 
 <body>
-    <header>
+    <header id="page-header">
         <nav>
             <div class="logo">
                 <a href="home.html"><img src="../Assets/icons/logo-tastebuds.svg" alt="TasteBuds Logo"></a>
@@ -70,6 +71,20 @@
     </section>
     <section class="tagline-strip">
         <h2>“Eating our way through Vancouver, one bite at a time.”</h2>
+    </section>
+
+    <section class="recent-blog">
+        <header id="section-head">
+            <h2 id="recent-heading">Recent Post</h2>
+            <a class="more-cta" href="/pages/blogPreview.html">Read more</a>
+        </header>
+
+        <div class="recent-grid" data-mount="recent">
+            <article class="featured">…</article>
+            <article class="small small-1">…</article>
+            <article class="small small-2">…</article>
+            <article class="small small-3">…</article>
+        </div>
     </section>
 </body>
 
