@@ -26,6 +26,11 @@ main {
   padding: 4rem 2rem;
   background: url(/Assets/images/hero-picture.jpeg) center/cover no-repeat;
 }
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}
 .hero .text-content {
   grid-column: 1/2;
   z-index: 10;
