@@ -1,11 +1,11 @@
 footer {
-  background-color: #000; 
+  background-color: #000;
   color: #fff;
   padding: 60px 100px;
   display: flex;
-  justify-content: space-between; 
-  align-items: flex-start; 
-  flex-wrap: wrap; 
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 
@@ -38,7 +38,7 @@ footer {
 
 .ft-links {
   display: flex;
-  gap: 80px; 
+  gap: 80px;
 }
 
 .ft-col h3 {

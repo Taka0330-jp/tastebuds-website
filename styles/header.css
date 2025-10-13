@@ -6,6 +6,7 @@
     align-items: center;
     position: relative;
     z-index: 99;
+    position: fixed;
 }
 
 #page-header nav {
@@ -13,7 +14,7 @@
     padding: 2rem 3rem;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     position: relative;
     z-index: 99;
 }
@@ -21,9 +22,7 @@
 #page-header nav .menu {
     display: flex;
     color: var(--header-text);
-    gap: 2rem;
-    margin-left: auto;
-    margin-right: 5rem;
+    gap: 3rem;
     font-size: var(--fs-link-s);
     font-family: var(--font-body);
 }
@@ -203,8 +202,9 @@ header nav .social {
         height: auto;
     }
 
-    .menu a {
+    #page-header nav .menu {
         display: none;
+        margin: 0;
     }
 
     .hamburger {
