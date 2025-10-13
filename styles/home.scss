@@ -108,7 +108,7 @@ a {
         .featured {
             grid-area: 1 / 1 / 4 / 3;
             border-right: 2px solid #000;
-            height: 900px;
+            height: auto;
 
             img {
                 width: 100%;
@@ -126,12 +126,12 @@ a {
 
                 .head-body {
                     h3 {
-                        font-size: var(--fs-heading-s);
+                        font-size: var(--fs-heading-m);
                     }
 
                     p {
                         margin-top: 1rem;
-                        font-size: var(--fs-body-s);
+                        font-size: var(--fs-body-m);
                     }
                 }
 
@@ -140,6 +140,7 @@ a {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
+                    padding-top: 1rem;
 
                     .icons {
                         display: flex;
@@ -165,7 +166,7 @@ a {
         .small {
             border-bottom: 2px solid #000;
             display: flex;
-            height: 300px;
+            height: auto;
 
             img {
                 aspect-ratio: 3 / 2;
@@ -195,10 +196,15 @@ a {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
+                    padding-top: 1rem;
 
                     .icons {
                         display: flex;
                         gap: 1rem;
+
+                        @media(max-width:960px) {
+                            gap: 0.5rem;
+                        }
 
                         .icon {
                             width: 24px;
@@ -241,16 +247,30 @@ a {
                 grid-area: 1 / 1 / 2 / 2;
                 border-bottom: 2px solid #000;
                 border-right: none;
-                height: 450px;
 
                 img {
-                    height: 60%;
+                    height: auto;
+                }
+
+                .text-container {
+
+                    height: auto;
+
+                    .head-body {
+                        h3 {
+                            font-size: var(--fs-heading-s);
+                        }
+
+                        p {
+                            font-size: var(--fs-body-s);
+                        }
+
+                    }
                 }
             }
 
             .small {
                 flex-direction: column;
-                height: 450px;
                 border-bottom: 2px solid #000;
 
                 img {
@@ -258,6 +278,10 @@ a {
                     height: 60%;
                     object-fit: cover;
                     display: block;
+                }
+
+                .link {
+                    padding-top: 1rem;
                 }
 
                 &-1 {

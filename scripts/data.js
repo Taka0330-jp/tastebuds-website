@@ -4,7 +4,7 @@ export const posts = [
   // ==== Recent Section ====
   {
     id: 1,
-    title: "Heading-S: Exploring Vancouver’s Hidden Cafés",
+    title: "Heading-M: Exploring Vancouver’s Hidden Cafés",
     excerpt:
       "Body-M: Discover cozy corners and specialty coffee shops around Vancouver where every cup tells a story.",
     image: "https://picsum.photos/800/450?random=1",
