@@ -1,22 +1,6 @@
 /* =========================
    Hero Section
 ========================= */
-h1,
-h2,
-h3 {
-  font-family: var(--font-heading);
-}
-
-p,
-span,
-a {
-  font-family: var(--font-body);
-}
-
-main {
-  padding-top: 50px;
-}
-
 .hero {
   position: relative;
   display: grid;
