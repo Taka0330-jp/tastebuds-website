@@ -1,10 +1,14 @@
-/* layout helpers (if not already in root.css) */
 .container { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
 
-/* ===== CONTACT GRID ===== */
-.contact-page { background: #fff; }
 
-.contact-grid {
+.contact-page {
+  background: #fff; 
+  font-family: var(--font-body);
+  color: var(--color-text);
+}
+
+/*  Grid  */
+.contact-grid{
   display: grid;
   grid-template-columns: 1fr 1.1fr;
   gap: 56px;
@@ -12,104 +16,163 @@
   padding: 72px 0;
 }
 
-/* LEFT */
-.contact-left h1 {
-  font-size: clamp(28px, 3.2vw, 40px);
-  line-height: 1.1;
+/* ===== Left ===== */
+.contact-left h1{
+  font-family: var(--font-heading);
+  font-size: var(--fs-heading-display);  
+  line-height: var(--lh-heading);
+  color: var(--color-secondary);          
   margin: 0 0 16px;
 }
 
-.contact-left p {
-  color: #3a3a3a;
+.contact-left p{
+  font-size: var(--fs-body-m);            
+  line-height: var(--lh-body);
+  color: var(--color-text);          
   max-width: 44ch;
   margin: 0 0 24px;
 }
 
-.contact-email {
+/* Email block */
+.contact-email{
   display: grid;
   grid-template-columns: auto auto 1fr;
   gap: 8px 12px;
   align-items: center;
   margin: 20px 0 28px;
 }
-.contact-email .label { text-transform: uppercase; font-size: 12px; letter-spacing: .08em; color: #666; }
-.contact-email a { font-size: 18px; text-decoration: none; color: #000; }
-
-.contact-follow .follow-label {
-  display: block;
+.contact-email .label{
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: .08em;
-  color: #666;
+  color: color-mix(in srgb, var(--color-text) 55%, white);
+}
+.contact-email a{
+  font-size: var(--fs-body-l);          
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+
+
+.contact-follow .follow-label{
+  display:block;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: .08em;
+  color: color-mix(in srgb, var(--color-text) 55%, white);
   margin-bottom: 10px;
 }
-.follow-icons a { display: inline-block; margin-right: 16px; }
-.follow-icons img { width: 22px; height: 22px; display: block; }
+.follow-icons a{ display:inline-block; margin-right:16px; }
+.follow-icons img {
+  width: 22px;  
+  height: 22px;
+  display: block;
+  filter: brightness(0) invert(0.2);
+}
 
-/* RIGHT – FORM CARD */
-.contact-form {
-  background: #e9e9e9;
+
+.icon-captions{
+  display:grid;
+  grid-template-columns: repeat(3, max-content);
+  gap:0 16px;
+  margin-top:6px;
+}
+.icon-captions span{
+  font-size:10px;
+  color: color-mix(in srgb, var(--color-text) 45%, white);
+}
+
+/*Form card */
+.contact-form{
+  background: color-mix(in srgb, var(--color-text) 8%, white);
   padding: 28px;
   border-radius: 6px;
 }
-.contact-form h2 { margin: 0 0 16px; font-size: 22px; }
+.contact-form h2{
+  font-family: var(--font-heading);
+  font-size: var(--fs-heading-s);   
+  color: var(--color-secondary);
+  margin: 0 0 16px;
+}
 
-.contact-form .row {
-  display: grid;
+.contact-form .row{
+  display:grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
   margin-bottom: 12px;
 }
 
-.field { display: grid; gap: 6px; margin-bottom: 12px; }
-.field > span { font-size: 12px; color: #5a5a5a; }
+.field{ display:grid; gap:6px; margin-bottom:12px; }
+.field > span{
+  font-size: 12px;
+  color: color-mix(in srgb, var(--color-text) 55%, white);
+}
 
 input[type="text"],
 input[type="email"],
-textarea {
-  width: 100%;
-  border: 1px solid #d1d1d1;
-  border-radius: 4px;
-  padding: 10px 12px;
+textarea{
+  width:100%;
+  border:1px solid color-mix(in srgb, var(--color-text) 25%, white);
+  border-radius:4px;
+  padding:10px 12px;
   font: inherit;
-  background: #fff;
-  outline: none;
+  background:#fff;
+  color: var(--color-text);
+  outline:none;
 }
-input:focus, textarea:focus { border-color: #111; }
-
-.btn {
-  display: inline-block;
-  border: 1px solid #111;
-  background: #111;
-  color: #fff;
-  padding: 10px 14px;
-  border-radius: 4px;
-  font-weight: 600;
-  cursor: pointer;
+input:focus,
+textarea:focus{
+  border-color: var(--color-secondary);  /* đen */
 }
-.btn:hover { filter: brightness(.95); }
-.btn:active { transform: translateY(1px); }
 
-.btn.btn-outline {
+/* Buttons  */
+.btn{
+  display:inline-block;
+  border:1px solid var(--color-secondary);
+  background: var(--color-secondary);
+  color: var(--color-text-w);
+  padding:10px 14px;
+  border-radius:4px;
+  font-weight:600;
+  cursor:pointer;
+}
+.btn:hover{ filter:brightness(.95); }
+.btn:active{ transform: translateY(1px); }
+
+.btn.btn-outline{
   background: transparent;
-  color: #111;
+  color: var(--color-secondary);
+  border-color: var(--color-secondary);
 }
 
-/* ===== CTA BAND ===== */
-.cta-band { background: #e0e0e0; padding: 56px 0; margin-top: 40px; }
-.cta-inner { text-align: center; max-width: 880px; }
-.cta-inner h2 { margin: 0 0 10px; font-size: clamp(20px, 2.4vw, 28px); }
-.cta-inner p { margin: 0 0 16px; color: #3c3c3c; }
-
-/* ===== ACCESSIBILITY ===== */
-.sr-only {
-  position: absolute;
-  width: 1px; height: 1px; padding: 0; margin: -1px;
-  overflow: hidden; clip: rect(0,0,0,0); border: 0;
+/* CTA band */
+.cta-band{
+  background: var(--color-bg);          
+  padding:56px 0;
+  margin-top:40px;
+  border-top:1px solid color-mix(in srgb, var(--color-text) 15%, transparent); /* hairline giống wireframe */
+}
+.cta-inner{ text-align:center; max-width:880px; }
+.cta-inner h2{
+  font-family: var(--font-heading);
+  font-size: var(--fs-heading-m-bold);   
+  line-height: var(--lh-heading);
+  color: var(--color-secondary);
+  margin:0 0 10px;
+}
+.cta-inner p{
+  font-size: var(--fs-body-s);          
+  color: color-mix(in srgb, var(--color-text) 70%, white);
+  margin:0 0 16px;
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 960px) {
-  .contact-grid { grid-template-columns: 1fr; gap: 28px; padding: 40px 0; }
-  .contact-form .row { grid-template-columns: 1fr; }
+
+.sr-only{
+  position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0,0,0,0); border:0;
+}
+
+@media (max-width:960px){
+  .contact-grid{ grid-template-columns:1fr; gap:28px; padding:40px 0; }
+  .contact-form .row{ grid-template-columns:1fr; }
 }
