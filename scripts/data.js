@@ -1,31 +1,31 @@
 export const posts = [
   {
     id: 1,
-    title: "Heading-M: Exploring Vancouver’s Hidden Cafés",
+    title: "Boba Boom: How Vancouver Fell in Love with Bubble Tea",
     excerpt:
-      "Body-M: Discover cozy corners and specialty coffee shops around Vancouver where every cup tells a story.",
-    image: "https://picsum.photos/800/450?random=1",
-    alt: "Latte art served at a cozy Vancouver café",
+      "If you live in Vancouver, you’ve probably noticed something: bubble tea shops are everywhere...",
+    image: "../Assets/images/chicha-san-chen-bubble-tea-cambie-vancouver.jpeg",
+    alt: "The store of chicha-san-chen-bubble-tea-cambie",
     category: "Recent",
-    date: "2025-10-08",
-    author: "Admin",
-    location: "Downtown Vancouver",
+    date: "2025-10-14",
+    author: "Esme Chan",
+    location: "",
     url: "#",
-    tag: ["Cafe", "Breakfast", "Brunch"]
+    tag: ["Cafe", "Dessert" ]
   },
   {
     id: 2,
-    title: "Heading-S: Weekend Brunch You Can’t Miss",
+    title: "Heavenly Desserts is Bringing a Slice of Sweet Luxury to Vancouver",
     excerpt:
-      "Body-S: From fluffy pancakes to eggs benedict, here are the must-try brunch spots locals swear by.",
-    image: "https://picsum.photos/800/450?random=2",
-    alt: "Delicious brunch plate with pancakes and fruit",
+      "Exciting news for dessert lovers! The UK’s premium dessert brand Heavenly Desserts is officially making its way to Vancouver’s West End.",
+    image: "../Assets/images/heavenly-desserts-marylebone.jpg",
+    alt: "The store of Heavenly Desserts",
     category: "Recent",
-    date: "2025-10-06",
-    author: "Editor",
-    location: "Kitsilano, Vancouver",
+    date: "2025-10-13",
+    author: "Esme Chan",
+    location: "Vancouver West",
     url: "#",
-    tag: ["Brunch", "Cafe", "Breakfast"]
+    tag: ["Dessert", "Cafe"]
   },
   {
     id: 3,
