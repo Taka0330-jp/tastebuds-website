@@ -1,7 +1,4 @@
-// data.js
-
 export const posts = [
-  // ==== Recent Section ====
   {
     id: 1,
     title: "Heading-M: Exploring Vancouver’s Hidden Cafés",
@@ -12,7 +9,9 @@ export const posts = [
     category: "Recent",
     date: "2025-10-08",
     author: "Admin",
-    url: "#"
+    location: "Downtown Vancouver",
+    url: "#",
+    tag: ["Cafe", "Breakfast", "Brunch"]
   },
   {
     id: 2,
@@ -24,7 +23,9 @@ export const posts = [
     category: "Recent",
     date: "2025-10-06",
     author: "Editor",
-    url: "#"
+    location: "Kitsilano, Vancouver",
+    url: "#",
+    tag: ["Brunch", "Cafe", "Breakfast"]
   },
   {
     id: 3,
@@ -36,7 +37,9 @@ export const posts = [
     category: "Recent",
     date: "2025-10-05",
     author: "Guest Writer",
-    url: "#"
+    location: "Richmond Night Market",
+    url: "#",
+    tag: ["Street Food", "Lunch", "Dinner"]
   },
   {
     id: 4,
@@ -48,10 +51,10 @@ export const posts = [
     category: "Recent",
     date: "2025-10-03",
     author: "Foodie",
-    url: "#"
+    location: "Metrotown, Burnaby",
+    url: "#",
+    tag: ["Dinner", "Lunch"]
   },
-
-  // ==== Best in Town Section ====
   {
     id: 5,
     title: "Heading-S: Best Coffee Spots in Vancouver",
@@ -62,7 +65,9 @@ export const posts = [
     category: "Best",
     date: "2025-09-29",
     author: "Local Guide",
-    url: "#"
+    location: "Gastown, Vancouver",
+    url: "#",
+    tag: ["Cafe", "Breakfast", "Brunch"]
   },
   {
     id: 6,
@@ -74,7 +79,9 @@ export const posts = [
     category: "Best",
     date: "2025-09-28",
     author: "Editor",
-    url: "#"
+    location: "Granville Island Public Market",
+    url: "#",
+    tag: ["Street Food", "Lunch"]
   },
   {
     id: 7,
@@ -86,6 +93,8 @@ export const posts = [
     category: "Best",
     date: "2025-09-27",
     author: "Foodie",
-    url: "#"
+    location: "Downtown Vancouver",
+    url: "#",
+    tag: ["Dinner", "Dessert", "Street Food"]
   }
 ];
