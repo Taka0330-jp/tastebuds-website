@@ -33,7 +33,7 @@
     transition: all 0.2s ease-in-out;
 }
 
-a:hover {
+.menu a:hover {
     color: var(--color-primary);
 }
 

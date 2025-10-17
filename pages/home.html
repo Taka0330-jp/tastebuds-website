@@ -85,13 +85,56 @@
                 <a class="more-cta" href="/pages/blogPreview.html">Read more</a>
             </header>
 
-            <div class="recent-grid" data-mount="recent">
-                <!-- <article class="featured"></article>
-            <article class="small small-1"></article>
-            <article class="small small-2"></article>
-            <article class="small small-3"></article> -->
-            </div>
+            <div class="recent-grid" data-mount="recent"></div>
+
+            <!-- === Templates=== -->
+            <!-- Featured -->
+            <template id="tplFeatured">
+                <article class="featured">
+                    <img class="js-img" src="" alt="" loading="lazy" />
+                    <div class="text-container">
+                        <div class="head-body">
+                            <h3 class="card__title js-title"></h3>
+                            <p class="card__excerpt js-excerpt"></p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer__text">
+                                <p class="card-footer__loacation js-location"></p>
+                                <p class="card-footer__date js-date"></p>
+                            </div>
+
+                            <div class="card-footer__btn">
+                                <a class="js-url" href="#"><span>Read</span></a>
+                            </div>
+                        </div>
+                </article>
+            </template>
+
+            <!-- Small -->
+            <template id="tplSmall">
+                <article class="small">
+                    <img class="js-img" src="" alt="" loading="lazy" />
+                    <div class="text-container">
+                        <div class="head-body">
+                            <h3 class="card__title js-title"></h3>
+                            <p class="card__excerpt js-excerpt"></p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer__text">
+                                <p class="card-footer__loacation js-location"></p>
+                                <p class="card-footer__date js-date"></p>
+                            </div>
+
+                            <div class="card-footer__btn">
+                                <a class="js-url" href="#"><span>Read</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </template>
+
         </section>
+
 
         <section class="best-blog">
             <header class="section-head">

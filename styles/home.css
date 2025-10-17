@@ -86,20 +86,22 @@
 .recent-blog .recent-grid {
   border: 2px solid #000;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
   width: 100%;
   /* ===== Featured Card ===== */
   /* ===== Small Cards ===== */
 }
 .recent-blog .recent-grid .featured {
-  grid-area: 1/1/4/3;
+  grid-column: 1/2;
+  grid-row: 1/4;
   border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
   height: auto;
 }
 .recent-blog .recent-grid .featured img {
   width: 100%;
-  height: 60%;
+  height: 50%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -109,7 +111,7 @@
   justify-content: space-between;
   position: relative;
   padding: 1rem 2rem;
-  height: 40%;
+  height: 50%;
 }
 .recent-blog .recent-grid .featured .text-container .head-body h3 {
   font-size: var(--fs-heading-m);
@@ -118,25 +120,28 @@
   margin-top: 1rem;
   font-size: var(--fs-body-m);
 }
-.recent-blog .recent-grid .featured .text-container .link {
+.recent-blog .recent-grid .featured .text-container .card-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 1rem;
 }
-.recent-blog .recent-grid .featured .text-container .link .icons {
+.recent-blog .recent-grid .featured .text-container .card-footer__text {
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #808080;
 }
-.recent-blog .recent-grid .featured .text-container .link .icons .icon {
-  width: 24px;
-  height: 24px;
+.recent-blog .recent-grid .featured .text-container .card-footer__btn {
+  border: 3px solid var(--color-secondary);
+  color: var(--color-secondary);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-.recent-blog .recent-grid .featured .text-container .link .read-btn {
+.recent-blog .recent-grid .featured .text-container .card-footer__btn:hover {
   background-color: var(--color-secondary);
   color: #fff;
-  padding: 0.5rem 1rem;
-  border-radius: 30px;
 }
 .recent-blog .recent-grid .small {
   border-bottom: 2px solid #000;
@@ -155,6 +160,7 @@
   justify-content: space-between;
   position: relative;
   padding: 1rem 2rem;
+  font-size: var(--fs-link-s);
 }
 .recent-blog .recent-grid .small .text-container .head-body h3 {
   font-size: var(--fs-heading-s);
@@ -163,42 +169,43 @@
   margin-top: 1rem;
   font-size: var(--fs-body-s);
 }
-.recent-blog .recent-grid .small .text-container .link {
+.recent-blog .recent-grid .small .text-container .card-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 1rem;
+  font-size: var(--fs-link-s);
 }
-.recent-blog .recent-grid .small .text-container .link .icons {
+.recent-blog .recent-grid .small .text-container .card-footer__text {
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  color: #808080;
+  gap: 0.5rem;
 }
-@media (max-width: 960px) {
-  .recent-blog .recent-grid .small .text-container .link .icons {
-    gap: 0.5rem;
-  }
+.recent-blog .recent-grid .small .text-container .card-footer__btn {
+  border: 3px solid var(--color-secondary);
+  color: var(--color-secondary);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-.recent-blog .recent-grid .small .text-container .link .icons .icon {
-  width: 24px;
-  height: 24px;
-}
-.recent-blog .recent-grid .small .text-container .link .read-btn {
+.recent-blog .recent-grid .small .text-container .card-footer__btn:hover {
   background-color: var(--color-secondary);
   color: #fff;
-  padding: 0.5rem 1rem;
-  border-radius: 30px;
 }
 .recent-blog .recent-grid .small-1 {
-  grid-area: 1/3/2/5;
+  grid-column: 2/3;
+  grid-row: 1/2;
 }
 .recent-blog .recent-grid .small-2 {
-  grid-area: 2/3/3/5;
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
 .recent-blog .recent-grid .small-3 {
-  grid-area: 3/3/4/5;
-  border-bottom: none;
+  grid-column: 2/3;
+  grid-row: 3/4;
 }
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .recent-blog .recent-grid {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
