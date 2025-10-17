@@ -204,8 +204,6 @@
                         flex-direction: column;
                         color: #808080;
                         gap: 0.5rem;
-
-
                     }
 
                     &__btn {
@@ -361,31 +359,31 @@
                 }
             }
 
-            .link {
+            .card-footer {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 padding-top: 1rem;
+                font-size: var(--fs-link-s);
 
-                .icons {
+                &__text {
                     display: flex;
-                    gap: 1rem;
-
-                    @media(max-width:960px) {
-                        gap: 0.5rem;
-                    }
-
-                    .icon {
-                        width: 24px;
-                        height: 24px;
-                    }
+                    flex-direction: column;
+                    color: #808080;
+                    gap: 0.5rem;
                 }
 
-                .read-btn {
-                    background-color: var(--color-secondary);
-                    color: #fff;
+                &__btn {
+                    border: 3px solid var(--color-secondary);
+                    color: var(--color-secondary);
                     padding: 0.5rem 1rem;
-                    border-radius: 30px;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        background-color: var(--color-secondary);
+                        color: #fff;
+                    }
                 }
             }
         }
@@ -419,7 +417,6 @@
             @media(max-width:768px) {
                 grid-area: auto / auto / auto / auto;
                 border-right: none;
-                border-bottom: 2px solid #000;
             }
 
 
