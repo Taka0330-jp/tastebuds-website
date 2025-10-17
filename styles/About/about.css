@@ -1,0 +1,44 @@
+main {
+  padding-top: 100px;
+}
+@media (min-width: 769px) {
+  main {
+    padding-top: 150px;
+  }
+}
+main .welcome {
+  padding: 2rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+@media (max-width: 768px) {
+  main .welcome {
+    grid-template-columns: 1fr;
+  }
+}
+main .welcome__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  line-height: var(--lh-body);
+}
+main .welcome__text h1 {
+  font-size: var(--fs-heading-display);
+}
+main .welcome__text p {
+  font-size: var(--fs-body-l);
+}
+main .welcome__image {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 768px) {
+  main .welcome__image {
+    justify-content: center;
+  }
+}/*# sourceMappingURL=about.css.map */
