@@ -11,14 +11,14 @@ export const posts = [
     author: "Esme Chan",
     location: "",
     url: "#",
-    tag: ["Cafe", "Dessert" ]
+    tag: ["Cafe", "Dessert"]
   },
   {
     id: 2,
     title: "Heavenly Desserts is Bringing a Slice of Sweet Luxury to Vancouver",
     excerpt:
       "Exciting news for dessert lovers! The UK’s premium dessert brand Heavenly Desserts is officially making its way to Vancouver’s West End.",
-    image: "../Assets/images/heavenly-desserts-marylebone.jpg",
+    image: "../Assets/images/Heavenly-dessert.avif",
     alt: "The store of Heavenly Desserts",
     category: "Recent",
     date: "2025-10-13",
