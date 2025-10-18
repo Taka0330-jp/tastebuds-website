@@ -41,4 +41,71 @@ main .welcome__image {
   main .welcome__image {
     justify-content: center;
   }
+}
+main .about-us {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+@media (max-width: 768px) {
+  main .about-us {
+    grid-template-columns: 1fr;
+  }
+}
+main .about-us__image {
+  width: 100%;
+}
+main .about-us__image img {
+  width: 100%;
+  height: 100%;
+}
+main .about-us__text {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-secondary);
+  padding: 2rem 1rem;
+}
+main .about-us__text h2 {
+  color: var(--color-primary);
+  font-size: var(--fs-heading-m-bold);
+}
+main .about-us__text p {
+  margin-top: 2rem;
+  color: #fff;
+  font-size: var(--fs-body-l);
+}
+main .tag-line {
+  height: auto;
+  border: 2px solid black;
+  display: flex;
+  width: 100%;
+  padding: 5rem 6rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  background-color: var(--color-primary);
+}
+@media (max-width: 768px) {
+  main .tag-line {
+    padding: 1rem 1.5rem;
+    height: auto;
+  }
+}
+main .tag-line__goal-label {
+  background-color: #fff;
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+}
+main .tag-line h2 {
+  font-size: clamp(1rem, 5vw, 3.5rem);
+  text-decoration: underline;
+}
+main .tag-line__goal-subtext {
+  padding-top: 1rem;
+  font-size: var(--fs-body-l);
+  font-style: italic;
 }/*# sourceMappingURL=about.css.map */
