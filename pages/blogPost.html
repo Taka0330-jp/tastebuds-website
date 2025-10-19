@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Taste Buds blog site</title>
+
+
   <link rel="stylesheet" href="../styles/root.css">
   <link rel="stylesheet" href="../styles/header.css">
   <link rel="stylesheet" href="../styles/footer.css">
   <link rel="stylesheet" href="../styles/contact.css">
+  <link rel="stylesheet" href="../styles/blog.css">
+
   <script src="/scripts/hamburger.js" defer></script>
-
 </head>
-
 <body>
   <header id="page-header">
     <nav>
@@ -22,32 +23,27 @@
 
       <div class="right">
         <ul class="menu">
-          <li><a href="/pages/blogPreview.html">
-              Blog
-            </a></li>
-          <li><a href="/pages/about.html">
-              About
-            </a></li>
-          <li><a href="/pages/contact.html">
-              Contact
-            </a></li>
-
+          <li><a href="/pages/blogPreview.html">Blog</a></li>
+          <li><a href="/pages/about.html">About</a></li>
+          <li><a href="/pages/contact.html">Contact</a></li>
         </ul>
 
         <div class="social">
-          <a href="#"><img src="../Assets/icons/Instagram Circle.png" alt=""></a>
-          <a href="#"><img src="../Assets/icons/TikTok.png" alt=""></a>
-          <a href="#"><img src="../Assets/icons/YouTube.png" alt=""></a>
+          <a href="#"><img src="../Assets/icons/Instagram Circle.png" alt="Instagram"></a>
+          <a href="#"><img src="../Assets/icons/TikTok.png" alt="TikTok"></a>
+          <a href="#"><img src="../Assets/icons/YouTube.png" alt="YouTube"></a>
         </div>
+
         <div>
           <a href="#" class="contact-cta"><span>Let’s Talk</span></a>
         </div>
-        <div class="hamburger">
+
+        <div class="hamburger" aria-label="Open menu" role="button" tabindex="0">
           <span></span>
           <span></span>
           <span></span>
         </div>
-
+      </div> 
     </nav>
 
     <div class="mobile-nav hide">
@@ -58,16 +54,60 @@
       </ul>
     </div>
   </header>
-  
+
+  <main class="blog-layout">
+    <div class="blog-container">
+      <section class="blog-content">
+        <h1 class="blog-page-title">Blog title</h1>
+
+        <article class="post-card">
+          <div class="post-thumb" aria-hidden="true"></div>
+          <h2 class="post-title">Title text</h2>
+          <p class="post-excerpt">
+            Lorem ipsum feugiat aliquam lacus sed ipsum ut volutpat eu a faucibus
+            urna ut orci vitae elementum eget sapien vel mauri ultricies diam
+            scelerisque vel porta egestas nunc amet sed mattis dignissim non
+            convallis commodo nisl nulla nulla pellentesque feugiat posuere nisi nunc
+            in laoreet eget sollicitudin vel.
+          </p>
+        </article>
+
+        <article class="post-card">
+          <div class="post-thumb" aria-hidden="true"></div>
+          <h2 class="post-title">Title text</h2>
+          <p class="post-excerpt">
+            Lorem ipsum feugiat aliquam lacus sed ipsum ut volutpat eu a faucibus
+            urna ut orci vitae elementum eget sapien vel mauri ultricies diam
+            scelerisque vel porta egestas nunc amet sed mattis dignissim non
+            convallis commodo nisl nulla nulla pellentesque feugiat posuere nisi nunc
+            in laoreet eget sollicitudin vel.
+          </p>
+        </article>
+      </section>
+
+      <!-- Sidebar -->
+      <aside class="blog-sidebar">
+        <h3 class="sidebar-heading">Recent Posts</h3>
+        <ul class="recent-list">
+          <li><a href="#">Big Way</a></li>
+          <li><a href="#">Gyubee</a></li>
+          <li><a href="#">Cactus Club Cafe</a></li>
+          <li><a href="#">Cactus Club Cafe</a></li>
+          <li><a href="#">Cactus Club Cafe</a></li>
+        </ul>
+      </aside>
+    </div>
+  </main>
+
   <footer>
     <div class="footer-content">
       <div class="footer-logo">
         <a href="home.html"><img src="../Assets/icons/logo-tastebuds.svg" alt="TasteBuds Logo"></a>
       </div>
       <div class="footer-social">
-        <a href="#"><img src="../Assets/icons/Instagram Circle.png" alt=""></a>
-        <a href="#"><img src="../Assets/icons/TikTok.png" alt=""></a>
-        <a href="#"><img src="../Assets/icons/YouTube.png" alt=""></a>
+        <a href="#"><img src="../Assets/icons/Instagram Circle.png" alt="Instagram"></a>
+        <a href="#"><img src="../Assets/icons/TikTok.png" alt="TikTok"></a>
+        <a href="#"><img src="../Assets/icons/YouTube.png" alt="YouTube"></a>
       </div>
     </div>
     <div class="ft-links">
@@ -89,7 +129,5 @@
       </div>
     </div>
   </footer>
-
 </body>
-
 </html>
