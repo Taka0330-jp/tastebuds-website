@@ -32,7 +32,7 @@
 .hero .text-content .hero-cta {
   padding: 1rem 0;
 }
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .hero .text-content::before {
     content: "";
     position: absolute;
