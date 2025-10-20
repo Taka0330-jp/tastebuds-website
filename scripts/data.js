@@ -4,7 +4,7 @@ export const posts = [
     title: "Boba Boom: How Vancouver Fell in Love with Bubble Tea",
     excerpt:
       "If you live in Vancouver, you’ve probably noticed something: bubble tea shops are everywhere. From Robson to Richmond, it feels like there’s a new one opening every week. But how did this sweet, chewy drink take over the city, and basically, the world?",
-    image: "../Assets/images/chicha-san-chen-bubble-tea-cambie-vancouver.jpeg",
+    image: "../Assets/images/Boba Boom Cover.jpg",
     alt: "The store of chicha-san-chen-bubble-tea-cambie",
     category: "Recent",
     date: "2025-10-14",
