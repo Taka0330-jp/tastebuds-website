@@ -220,4 +220,16 @@ textarea:focus {
   .contact-form .row {
     grid-template-columns: 1fr;
   }
+
+
+  .container {
+    padding: 0 20px; 
+  }
+
+  .contact-form {
+    padding: 20px; 
+    box-sizing: border-box; 
+    width: 100%;
+    margin: 0; 
+  }
 }
