@@ -127,8 +127,11 @@ main {
     }
 
     .share {
-        padding: 2rem 3rem;
+        margin: 1.5rem 0 1.5rem;
+        padding: 0 1rem 1rem 0;
         width: 100%;
+        display: flex;
+        align-items: center;
 
 
         &__container {
@@ -140,6 +143,7 @@ main {
             max-width: 1200px;
 
             h2 {
+                padding: 1rem;
                 font-size: var(--fs-body-l);
             }
 
@@ -276,5 +280,72 @@ main {
         }
     }
 
+    .subscribe {
+        background-color: var(--color-primary);
+        width: 100%;
+        height: auto;
+        padding: 2rem 1rem;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            text-align: center;
+
+            &__text {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                h2 {
+                    font-size: var(--fs-heading-m-bold);
+                }
+
+                p {
+                    font-size: var(--fs-body-m);
+                }
+            }
+
+            &__form {
+
+                padding: 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+
+                @media (max-width:768px) {
+                    flex-direction: column;
+                    gap: 1rem;
+                }
+
+                .email {
+                    display: flex;
+                    gap: 0;
+
+                    &__input {
+                        width: 300px;
+                        height: 50px;
+                        padding: 10px;
+                        border: 1px solid #000;
+                        outline: none;
+                    }
+
+                    &__btn {
+                        height: 50px;
+                        background-color: var(--color-secondary);
+                        color: #fff;
+                        padding: 0 0.5rem;
+                        outline: none;
+                        cursor: pointer;
+                        border: none;
+                        padding: 1rem;
+                    }
+                }
+
+
+            }
+        }
+    }
 
 }
