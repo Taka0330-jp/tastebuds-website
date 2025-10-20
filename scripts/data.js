@@ -24,7 +24,7 @@ export const posts = [
     date: "2025-10-13",
     author: "Esme Chan",
     location: "Vancouver West",
-    url: "#",
+    url: "/pages/posts/heavenly-desserts-vancouver.html",
     tag: ["Dessert", "Cafe"]
   },
   {
