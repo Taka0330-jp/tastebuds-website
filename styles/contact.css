@@ -1,3 +1,15 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
 .container {
   max-width: 1120px;
   margin: 0 auto;
@@ -69,14 +81,21 @@
   margin-bottom: 10px;
 }
 
+.follow-icons {
+  padding: 2rem 0rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;
+}
+
 .follow-icons a {
   display: inline-block;
   margin-right: 16px;
 }
 
 .follow-icons img {
-  width: 22px;
-  height: 22px;
+  width: 40px;
+  height: 40px;
   display: block;
   filter: brightness(0) invert(0.2);
 }
@@ -170,44 +189,78 @@ textarea:focus {
   border-color: var(--color-secondary);
 }
 
-/* CTA band */
-.cta-band {
-  background: var(--color-primary);
-  padding: 56px 0;
-  margin-top: 40px;
-  border-top: 2px solid #000;
-  /* hairline giống wireframe */
+main .subscribe {
+  background-color: var(--color-primary);
+  width: 100%;
+  height: auto;
+  padding: 2rem 1rem;
 }
 
-.cta-inner {
+main .subscribe .container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   text-align: center;
-  max-width: 880px;
 }
 
-.cta-inner h2 {
-  font-family: var(--font-heading);
+main .subscribe .container__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+main .subscribe .container__text h2 {
   font-size: var(--fs-heading-m-bold);
-  line-height: var(--lh-heading);
-  color: var(--color-secondary);
-  margin: 0 0 10px;
 }
 
-.cta-inner p {
-  font-size: var(--fs-body-s);
-  color: color-mix(in srgb, var(--color-text) 70%, white);
-  margin: 0 0 16px;
+main .subscribe .container__text p {
+  font-size: var(--fs-body-m);
 }
 
+main .subscribe .container__form {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+@media (max-width: 768px) {
+  main .subscribe .container__form {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+main .subscribe .container__form .email {
+  display: flex;
+  gap: 0;
+}
+
+main .subscribe .container__form .email__input {
+  width: 300px;
+  height: 50px;
+  padding: 10px;
+  border: 1px solid #000;
+  outline: none;
+}
+
+main .subscribe .container__form .email__btn {
+  height: 50px;
+  background-color: var(--color-secondary);
+  color: #fff;
+  padding: 0 0.5rem;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 1rem;
+  font-size: var(--fs-link-s);
+  white-space: nowrap
+}
+
+footer {
+  margin-top: auto;
+  /* 常に最下部へ押し下げる */
 }
 
 @media (max-width:960px) {
@@ -215,6 +268,7 @@ textarea:focus {
     grid-template-columns: 1fr;
     gap: 28px;
     padding: 40px 0;
+    margin-bottom: 1rem;
   }
 
   .contact-form .row {
@@ -223,13 +277,13 @@ textarea:focus {
 
 
   .container {
-    padding: 0 20px; 
+    padding: 0 20px;
   }
 
   .contact-form {
-    padding: 20px; 
-    box-sizing: border-box; 
+    padding: 20px;
+    box-sizing: border-box;
     width: 100%;
-    margin: 0; 
+    margin: 0;
   }
 }
