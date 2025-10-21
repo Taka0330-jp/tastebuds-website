@@ -11,7 +11,7 @@ export const posts = [
     author: "Esme Chan",
     location: "",
     url: "#",
-    tag: ["Cafe", "Dessert"]
+    tag: ["Cafe", "Dessert", "Fan Facts"]
   },
   {
     id: 2,
@@ -29,17 +29,17 @@ export const posts = [
   },
   {
     id: 3,
-    title: "Heading-S: Street Food Adventures",
+    title: "What Your Coffee Order Says About You – Vancouver Edition",
     excerpt:
-      "Body-S: Dive into Vancouver’s vibrant street food scene, featuring dumplings, tacos, and more.",
-    image: "https://picsum.photos/800/450?random=3",
-    alt: "Vancouver night market with colorful food stalls",
+      "In a city that runs on caffeine and rain, coffee is basically Vancouver’s love language. Whether you’re working from a cozy café in Mount Pleasant, grabbing a to-go cup before a Stanley Park walk, or sipping something iced on Commercial Drive in mid-January, your order says a lot about you.",
+    image: "/pages/posts/Coffee Order/americano.webp",
+    alt: "a glass of americano",
     category: "Recent",
     date: "2025-10-05",
-    author: "Guest Writer",
-    location: "Richmond Night Market",
+    author: "Esme Chan",
+    location: "",
     url: "#",
-    tag: ["Street Food", "Lunch", "Dinner"]
+    tag: ["Dessert", "Fan Facts"]
   },
   {
     id: 4,
