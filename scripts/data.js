@@ -57,17 +57,17 @@ export const posts = [
   },
   {
     id: 5,
-    title: "Heading-S: Best Coffee Spots in Vancouver",
+    title: "Enjoy a Taiwanese-style chicken burger at Zhengxin Chicken Steak",
     excerpt:
-      "Body-S: Our curated list of cozy cafés perfect for working, chatting, or relaxing downtown.",
-    image: "https://picsum.photos/800/450?random=5",
+      "Walking near Metrotown Mall, a bright red exterior with a large crown chicken character catches your eye.",
+    image: "/pages/posts/Zheng Xin/zhengxin_burger.webp",
     alt: "Coffee shop interior with wooden tables and plants",
     category: "Best",
-    date: "2025-09-29",
+    date: "2025-10-19",
     author: "Local Guide",
-    location: "Gastown, Vancouver",
-    url: "#",
-    tag: ["Cafe", "Breakfast", "Brunch"]
+    location: "5105 Kingsway, Burnaby, BC",
+    url: "/pages/posts/Zheng Xin/zheng-xin.html",
+    tag: ["Street Food", "Lunch"]
   },
   {
     id: 6,
