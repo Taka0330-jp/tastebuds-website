@@ -43,17 +43,17 @@ export const posts = [
   },
   {
     id: 4,
-    title: "Heading-S: Where to Find the Best Ramen",
+    title: "Do you know Dim Sum Literally Means “Touch the Heart”?",
     excerpt:
-      "Body-S: Craving rich broth and chewy noodles? These ramen spots are guaranteed to hit the spot.",
-    image: "https://picsum.photos/800/450?random=4",
+      "If you grew up in Hong Kong or have shared a Sunday dim sum brunch in Vancouver, you know there’s nothing like it — the laughter, the chatter, the steam, and the comfort of home.",
+    image: "/pages/posts/Dim Sum/dim-sum-cover.jpg",
     alt: "Bowl of steaming ramen with egg and green onions",
     category: "Recent",
     date: "2025-10-03",
-    author: "Foodie",
-    location: "Metrotown, Burnaby",
-    url: "#",
-    tag: ["Dinner", "Lunch"]
+    author: "Esme Chan",
+    location: "",
+    url: "/pages/posts/Dim Sum/dim-sum.html",
+    tag: ["Fan Facts", "Lunch"]
   },
   {
     id: 5,
