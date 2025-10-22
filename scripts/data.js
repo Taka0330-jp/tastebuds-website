@@ -4,13 +4,13 @@ export const posts = [
     title: "Boba Boom: How Vancouver Fell in Love with Bubble Tea",
     excerpt:
       "If you live in Vancouver, you’ve probably noticed something: bubble tea shops are everywhere. From Robson to Richmond, it feels like there’s a new one opening every week. But how did this sweet, chewy drink take over the city, and basically, the world?",
-    image: "../Assets/images/Boba Boom Cover.jpg",
+    image: "/pages/posts/Boba Boom/Boba Boom Cover.jpg",
     alt: "The store of chicha-san-chen-bubble-tea-cambie",
     category: "Recent",
     date: "2025-10-14",
     author: "Esme Chan",
     location: "",
-    url: "#",
+    url: "/pages/posts/Boba Boom/bobaBoom.html",
     tag: ["Cafe", "Dessert", "Fan Facts"]
   },
   {
@@ -18,7 +18,7 @@ export const posts = [
     title: "Heavenly Desserts is Bringing a Slice of Sweet Luxury to Vancouver",
     excerpt:
       "Exciting news for dessert lovers! The UK’s premium dessert brand Heavenly Desserts is officially making its way to Vancouver’s West End.",
-    image: "../Assets/images/Heavenly-dessert.avif",
+    image: "/pages/posts/Heavenly Desserts/Heavenly-dessert.avif",
     alt: "The store of Heavenly Desserts",
     category: "Recent",
     date: "2025-10-13",
@@ -31,14 +31,14 @@ export const posts = [
     id: 3,
     title: "What Your Coffee Order Says About You – Vancouver Edition",
     excerpt:
-      "In a city that runs on caffeine and rain, coffee is basically Vancouver’s love language. Whether you’re working from a cozy café in Mount Pleasant, grabbing a to-go cup before a Stanley Park walk, or sipping something iced on Commercial Drive in mid-January, your order says a lot about you.",
+      "In a city fueled by caffeine and rain, coffee is Vancouver’s love language — from cozy Mount Pleasant cafés to iced drinks on Commercial Drive.",
     image: "/pages/posts/Coffee Order/americano.webp",
     alt: "a glass of americano",
     category: "Recent",
     date: "2025-10-05",
     author: "Esme Chan",
     location: "",
-    url: "#",
+    url: "/pages/posts/Coffee Order/coffeeOrder.html",
     tag: ["Dessert", "Fan Facts"]
   },
   {
