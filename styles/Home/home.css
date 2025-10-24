@@ -74,6 +74,11 @@
   padding: 4rem 3rem 0;
   /* ===== Responsive ===== */
 }
+@media (max-width: 968px) {
+  .recent-blog {
+    padding: 0;
+  }
+}
 .recent-blog #section-head {
   display: flex;
   align-items: center;
@@ -257,6 +262,11 @@
 .best-blog {
   padding: 0rem 3rem 0;
   margin-bottom: 3rem;
+}
+@media (max-width: 968px) {
+  .best-blog {
+    padding: 0;
+  }
 }
 .best-blog .section-head {
   width: 100%;

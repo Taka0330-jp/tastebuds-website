@@ -80,6 +80,10 @@
 .recent-blog {
     padding: 4rem 3rem 0;
 
+    @media (max-width:968px) {
+        padding: 0;
+    }
+
     #section-head {
         display: flex;
         align-items: center;
@@ -307,6 +311,11 @@
     padding: 0rem 3rem 0;
     margin-bottom: 3rem;
 
+    @media (max-width:968px) {
+        padding: 0;
+    }
+
+
     .section-head {
         width: 100%;
         display: flex;
@@ -325,6 +334,7 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
         border: 2px solid #000;
+
 
         @media (max-width:968px) {
             display: grid;
