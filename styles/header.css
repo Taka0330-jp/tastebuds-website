@@ -1,0 +1,231 @@
+#page-header {
+    width: 100%;
+    height: 100px;
+    background-color: var(--color-secondary);
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 99;
+    position: fixed;
+}
+
+#page-header nav {
+    width: 100%;
+    padding: 2rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 99;
+}
+
+#page-header nav .menu {
+    display: flex;
+    color: var(--header-text);
+    gap: 3rem;
+    font-size: var(--fs-link-s);
+    font-family: var(--font-body);
+}
+
+.menu a {
+    position: relative;
+    padding-bottom: 2px;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu a:hover {
+    color: var(--color-primary);
+}
+
+.menu a:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: var(--color-primary);
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.menu a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+}
+
+header nav .social {
+    display: flex;
+    gap: 1rem;
+}
+
+.right {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.social img {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+
+.contact-cta {
+    position: relative;
+    display: inline-block;
+    padding: 10px 16px;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    font-family: var(--font-body);
+    font-size: var(--fs-link-l);
+    background: transparent;
+    overflow: hidden;
+    z-index: 0;
+    transition: transform .2s ease, color .2s ease;
+    white-space: nowrap;
+}
+
+.contact-cta::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -15%;
+    width: 130%;
+    background: var(--color-primary);
+    transform: translateX(-100%) skewX(-10deg);
+    transition: transform .25s ease-out;
+    z-index: 0;
+}
+
+
+.contact-cta span {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-cta:hover {
+    color: var(--color-secondary);
+    transform: scale(1.03);
+}
+
+.contact-cta:hover::after {
+    transform: translateX(0) skewX(-10deg);
+}
+
+.hamburger {
+    display: none;
+    width: 30px;
+    height: 30px;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: none;
+    width: 24px;
+    height: 2.4px;
+    background: #fff;
+    display: inline-block;
+    transition: all 0.4s ease-in-out;
+}
+
+.hamburger.open span:nth-child(1) {
+    transform: translate(0, 6px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+    transform: scaleX(0);
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: translate(0, -7px) rotate(-45deg);
+}
+
+
+.mobile-nav {
+    opacity: 1;
+    position: fixed;
+    height: 100vh;
+    width: 60vw;
+    top: 50px;
+    right: 0;
+    z-index: 50;
+    background: rgba(0, 0, 0, .8);
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+.mobile-nav ul {
+    display: grid;
+}
+
+.mobile-nav li a {
+    display: block;
+    padding: 36px 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, .22);
+    font-size: var(--fs-link-l);
+    font-family: var(--font-body);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+
+.mobile-nav li a:hover {
+    background: rgba(0, 0, 0, .8);
+    color: var(--color-primary);
+}
+
+.mobile-nav.hide {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+@media (max-width: 768px) {
+
+    #page-header {
+        height: 50px;
+    }
+
+    #page-header nav {
+        margin: 0;
+        padding: 0.5rem;
+    }
+
+    .logo img {
+        width: 80px;
+        height: auto;
+    }
+
+    #page-header nav .menu {
+        display: none;
+        margin: 0;
+    }
+
+    .hamburger {
+        display: flex;
+
+    }
+
+
+
+    .right {
+        gap: 1rem;
+    }
+
+    .contact-cta {
+        padding: 8px 12px;
+        font-size: var(--fs-link-s);
+    }
+}
+
+@media (min-width: 769px) {
+    .mobile-nav {
+        display: none;
+    }
+}

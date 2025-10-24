@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste Buds blog site</title>
+    <link rel="stylesheet" href="../styles/root.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/Home/home.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <script src="/scripts/hamburger.js" defer></script>
+    <script type="module" src="/scripts/HomePost.js"></script>
+</head>
+
+<body>
+    <header id="page-header">
+        <nav>
+            <div class="logo">
+                <a href="home.html"><img src="../Assets/icons/logo-tastebuds.svg" alt="TasteBuds Logo"></a>
+            </div>
+
+            <div class="right">
+                <ul class="menu">
+                    <li><a href="/pages/blogPreview.html">
+                            Blog
+                        </a></li>
+                    <li><a href="/pages/about.html">
+                            About
+                        </a></li>
+                    <li><a href="/pages/contact.html">
+                            Contact
+                        </a></li>
+
+                </ul>
+
+                <div class="social">
+                    <a href="#"><img src="../Assets/icons/Instagram Circle.png" alt=""></a>
+                    <a href="#"><img src="../Assets/icons/TikTok.png" alt=""></a>
+                    <a href="#"><img src="../Assets/icons/YouTube.png" alt=""></a>
+                </div>
+                <div>
+                    <a href="/pages/contact.html" class="contact-cta"><span>Let’s Talk</span></a>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+        </nav>
+
+        <div class="mobile-nav hide">
+            <ul>
+                <li><a href="/pages/blogPreview.html">Blog</a></li>
+                <li><a href="/pages/about.html">About</a></li>
+                <li><a href="/pages/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="text-content">
+                <h1>Your guide to Vancouver’s tastiest bites</h1>
+                <h2>Hey foodie friends! Welcome to Tastebuds, where we hunt down the yummiest eats, hidden gems, and
+                    must-try dishes all around Vancouver. From hole-in-the-wall dumpling shops to trendy brunch spots,
+                    we’re
+                    all about sharing the flavors that make this city so delicious.</h2>
+                <div class="hero-cta">
+                    <a href="/pages/contact.html" class="contact-cta"><span>Let’s Talk</span></a>
+                </div>
+            </div>
+            <div class="hero-right"></div>
+        </section>
+        <section class="tagline-strip">
+            <h2>“Eating our way through Vancouver, one bite at a time.”</h2>
+        </section>
+
+
+        <section class="recent-blog">
+            <header id="section-head">
+                <h2 id="recent-heading">Recent Post</h2>
+                <a class="more-cta" href="/pages/blogPreview.html">Read more</a>
+            </header>
+
+            <div class="recent-grid" data-mount="recent"></div>
+
+            <!-- === Templates=== -->
+            <!-- Featured -->
+            <template id="tplFeatured">
+                <article class="featured">
+                    <img class="js-img" src="" alt="" loading="lazy" />
+                    <div class="text-container">
+                        <div class="head-body">
+                            <h3 class="card__title js-title"></h3>
+                            <p class="card__excerpt js-excerpt"></p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer__text">
+                                <p class="card-footer__loacation js-location"></p>
+                                <p class="card-footer__date js-date"></p>
+                            </div>
+
+                            <div class="card-footer__btn">
+                                <a class="js-url" href="#"><span>Read</span></a>
+                            </div>
+                        </div>
+                </article>
+            </template>
+
+            <!-- Small -->
+            <template id="tplSmall">
+                <article class="small">
+                    <img class="js-img" src="" alt="" loading="lazy" />
+                    <div class="text-container">
+                        <div class="head-body">
+                            <h3 class="card__title js-title"></h3>
+                            <p class="card__excerpt js-excerpt"></p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer__text">
+                                <p class="card-footer__location js-location"></p>
+                                <p class="card-footer__date js-date"></p>
+                            </div>
+
+                            <div class="card-footer__btn">
+                                <a class="js-url" href="#"><span>Read</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </template>
+
+        </section>
+
+
+        <section class="best-blog">
+            <header class="section-head">
+                <h2>Best In Town</h2>
+                <a class="more-cta" href="/pages/blogPreview.html">Read more</a>
+            </header>
+            <div class="best-grid" data-mount="best"></div>
+            <template id="tplBest">
+
+                <article class="best-cards">
+                    <img class="js-img" src="" alt="" loading="lazy">
+                    <div class="text-container">
+                        <div class="head-body">
+                            <h3 class="card__title js-title"></h3>
+                            <p class="card__excerpt js-excerpt"></p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer__text">
+                                <p class="card-footer__location js-location"></p>
+                                <p class="card-footer__date js-date"></p>
+                            </div>
+
+                            <div class="card-footer__btn">
+                                <a class="js-url" href="#"><span>Read</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </template>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="home.html"><img src="../Assets/icons/logo-tastebuds.svg" alt="TasteBuds Logo"></a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><img src="../Assets/icons/Instagram Circle.png" alt=""></a>
+                <a href="#"><img src="../Assets/icons/TikTok.png" alt=""></a>
+                <a href="#"><img src="../Assets/icons/YouTube.png" alt=""></a>
+            </div>
+        </div>
+        <div class="ft-links">
+            <div class="ft-col">
+                <h3>Popular post</h3>
+                <ul>
+                    <li><a href="#">Tà Bom – Korean Cuisine</a></li>
+                    <li><a href="#">Blog post title</a></li>
+                    <li><a href="#">Blog post title</a></li>
+                </ul>
+            </div>
+            <div class="ft-col">
+                <h3>Tastebuds</h3>
+                <ul>
+                    <li><a href="/pages/about.html">about</a></li>
+                    <li><a href="/pages/blogPreview.html">blog</a></li>
+                    <li><a href="/pages/contact.html">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste Buds blog site</title>
+    <link rel="stylesheet" href="../styles/root.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/Blog/blogPreview.css">
+    <script src="/scripts/hamburger.js" defer></script>
+    <script type="module" src="/scripts/data.js"></script>
+    <script type="module" src="/scripts/blogFilter.js"></script>
+
+
+</head>
+
+<body>
+    <header id="page-header">
+        <nav>
+            <div class="logo">
+                <a href="home.html"><img src="../Assets/icons/logo-tastebuds.svg" alt="TasteBuds Logo"></a>
+            </div>
+
+            <div class="right">
+                <ul class="menu">
+                    <li><a href="/pages/blogPreview.html">
+                            Blog
+                        </a></li>
+                    <li><a href="/pages/about.html">
+                            About
+                        </a></li>
+                    <li><a href="/pages/contact.html">
+                            Contact
+                        </a></li>
+
+                </ul>
+
+                <div class="social">
+                    <a href="#"><img src="../Assets/icons/Instagram Circle.png" alt=""></a>
+                    <a href="#"><img src="../Assets/icons/TikTok.png" alt=""></a>
+                    <a href="#"><img src="../Assets/icons/YouTube.png" alt=""></a>
+                </div>
+                <div>
+                    <a href="#" class="contact-cta"><span>Let’s Talk</span></a>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+        </nav>
+
+        <div class="mobile-nav hide">
+            <ul>
+                <li><a href="/pages/blogPreview.html">Blog</a></li>
+                <li><a href="/pages/about.html">About</a></li>
+                <li><a href="/pages/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="container">
+        <div class="container site-title">
+            <h1 class="site-title">Blog Preview</h1>
+        </div>
+        <section class="content">
+            <nav class="tag-filter">
+                <ul id="tagList" class="tag-list">
+                    <!-- <li><button class="tag-btn is-active" data-tag="All">All</button></li> -->
+                </ul>
+            </nav>
+        </section>
+
+        <section class="content">
+            <div class="blog-grid" id="cardGrid">
+                <template id="cardTemplate">
+                    <article class="blog-card">
+                        <header class="blog-card__title">
+                            <h2 class="js-title"></h2>
+                        </header>
+                        <div class="blog-card__content">
+                            <div class="blog-card__image">
+                                <img class="js-img" src="" alt="">
+                            </div>
+                            <div class="blog-card__body">
+                                <div class="blog-card__text">
+                                    <p class="js-excerpt"></p>
+                                </div>
+                                <div class="blog-card__footer">
+                                    <div class="blog-card__icons">
+                                        <p class="blog-card__location js-location"></p>
+                                        <p class="blog-card__date js-date"></p>
+                                    </div>
+                                    <a class="blog-card__btn js-url" href="#">Read</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </template>
+
+
+            </div>
+            <!-- <button class="more-btn">More</button> -->
+
+            <form id="searchForm" role="search" class="search">
+                <input id="searchInput" name="q" type="search" placeholder="Search Blog" class="search__input" />
+                <button type="submit" class="search__btn">SEARCH</button>
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="home.html"><img src="../Assets/icons/logo-tastebuds.svg" alt="TasteBuds Logo"></a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><img src="../Assets/icons/Instagram Circle.png" alt=""></a>
+                <a href="#"><img src="../Assets/icons/TikTok.png" alt=""></a>
+                <a href="#"><img src="../Assets/icons/YouTube.png" alt=""></a>
+            </div>
+        </div>
+        <div class="ft-links">
+            <div class="ft-col">
+                <h3>Popular post</h3>
+                <ul>
+                    <li><a href="#">Tà Bom – Korean Cuisine</a></li>
+                    <li><a href="#">Blog post title</a></li>
+                    <li><a href="#">Blog post title</a></li>
+                </ul>
+            </div>
+            <div class="ft-col">
+                <h3>Tastebuds</h3>
+                <ul>
+                    <li><a href="/pages/about.html">about</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="/pages/contact.html">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

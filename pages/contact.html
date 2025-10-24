@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taste Buds blog site</title>
+  <link rel="stylesheet" href="../styles/root.css">
+  <link rel="stylesheet" href="../styles/header.css">
+  <link rel="stylesheet" href="../styles/footer.css">
+  <link rel="stylesheet" href="../styles/contact.css">
+  <script src="/scripts/hamburger.js" defer></script>
+
+</head>
+
+<body>
+  <header id="page-header">
+    <nav>
+      <div class="logo">
+        <a href="home.html"><img src="../Assets/icons/logo-tastebuds.svg" alt="TasteBuds Logo"></a>
+      </div>
+
+      <div class="right">
+        <ul class="menu">
+          <li><a href="/pages/blogPreview.html">
+              Blog
+            </a></li>
+          <li><a href="/pages/about.html">
+              About
+            </a></li>
+          <li><a href="/pages/contact.html">
+              Contact
+            </a></li>
+        </ul>
+
+        <div class="social">
+          <a href="#"><img src="../Assets/icons/Instagram Circle.png" alt=""></a>
+          <a href="#"><img src="../Assets/icons/TikTok.png" alt=""></a>
+          <a href="#"><img src="../Assets/icons/YouTube.png" alt=""></a>
+        </div>
+        <div>
+          <a href="#" class="contact-cta"><span>Let’s Talk</span></a>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+    </nav>
+
+    <div class="mobile-nav hide">
+      <ul>
+        <li><a href="/pages/blogPreview.html">Blog</a></li>
+        <li><a href="/pages/about.html">About</a></li>
+        <li><a href="/pages/contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="contact-page">
+    <section class="contact-grid container">
+      <div class="contact-left">
+        <h1>Contact</h1>
+        <p>
+          We love connecting with fellow food lovers, restaurant owners, and anyone who has a
+          delicious story to share. Have a hidden gem we should check out? Want to collaborate?
+          Or just wanna say hi? Drop us a message—we’re all ears (and stomachs).
+        </p>
+
+        <div class="contact-email">
+          <span class="icon" aria-hidden="true">✉️</span>
+          <span class="label">Email</span>
+          <a href="mailto:tasebuds@gmail.com">tastebuds@gmail.com</a>
+        </div>
+
+        <div class="contact-follow">
+          <span class="follow-label">Follow us</span>
+          <div class="follow-icons">
+            <a aria-label="Instagram" href="https://www.instagram.com/tastebudsvan/"><img
+                src="../Assets/icons/Instagram Circle.png" alt="" /></a>
+            <a aria-label="TikTok" href="https://www.tiktok.com/@tastebudsvan"><img src="../Assets/icons/TikTok.png"
+                alt="" /></a>
+            <p>@tastebudsvan</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Form-->
+      <form id="contact-form" class="contact-form" action="#" method="post" novalidate>
+        <h2>Let’s Talk</h2>
+
+        <div class="row">
+          <label class="field">
+            <span>First Name</span>
+            <input type="text" name="firstName" placeholder="First name" required />
+          </label>
+
+          <label class="field">
+            <span>Last Name</span>
+            <input type="text" name="lastName" placeholder="Last name" />
+          </label>
+        </div>
+
+        <label class="field">
+          <span>Email</span>
+          <input type="email" name="email" placeholder="you@example.com" required />
+        </label>
+
+        <label class="field">
+          <span>Comment or Message</span>
+          <textarea name="message" rows="6" placeholder="Write your message…" required></textarea>
+        </label>
+
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="subscribe">
+      <div class="container">
+        <div class="container__text">
+          <h2>Sign up for tasty updates</h2>
+          <p>No spam, just snacks. Catch our latest bites, reviews, and hidden gems weekly.</p>
+        </div>
+        <div class="container__form">
+
+          <form action="" class="email">
+            <input type="text" placeholder="example@email.com" class="email__input">
+            <button class="email__btn">Feed My inbox!</button>
+          </form>
+
+          <img src="/Assets/icons/EnvelopeSimple.svg" alt="">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <a href="home.html"><img src="../Assets/icons/logo-tastebuds.svg" alt="TasteBuds Logo"></a>
+      </div>
+      <div class="footer-social">
+        <a href="#"><img src="../Assets/icons/Instagram Circle.png" alt=""></a>
+        <a href="#"><img src="../Assets/icons/TikTok.png" alt=""></a>
+        <a href="#"><img src="../Assets/icons/YouTube.png" alt=""></a>
+      </div>
+    </div>
+    <div class="ft-links">
+      <div class="ft-col">
+        <h3>Popular post</h3>
+        <ul>
+          <li><a href="#">Tà Bom – Korean Cuisine</a></li>
+          <li><a href="#">Blog post title</a></li>
+          <li><a href="#">Blog post title</a></li>
+        </ul>
+      </div>
+      <div class="ft-col">
+        <h3>Tastebuds</h3>
+        <ul>
+          <li><a href="#">about</a></li>
+          <li><a href="/pages/blogPreview.html">blog</a></li>
+          <li><a href="/pages/contact.html">contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
