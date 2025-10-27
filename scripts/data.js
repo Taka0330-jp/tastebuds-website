@@ -79,9 +79,9 @@ export const posts = [
     category: "Best",
     date: "2025-09-28",
     author: "Editor",
-    location: "Granville Island Public Market",
+    location: "7-4300 Kingsway, Burnaby, BC",
     url: "/pages/posts/BigWay/bigway.html",
-    tag: ["Street Food", "Lunch"]
+    tag: ["Dinner", "Lunch"]
   },
   {
     id: 7,
