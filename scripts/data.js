@@ -71,23 +71,23 @@ export const posts = [
   },
   {
     id: 6,
-    title: "Heading-S: Must-Visit Weekend Markets",
+    title: "Why BigWay Hotpot Is So Popular in Vancouver?",
     excerpt:
-      "Body-S: Explore farmers’ markets filled with local produce, artisan crafts, and friendly faces.",
-    image: "https://picsum.photos/800/450?random=6",
+      "Vancouver is a multicultural city, especially with large Chinese and Vietnamese communities.",
+    image: "/pages/posts/BigWay/bigway1.jpg",
     alt: "Outdoor farmers market with colorful fruits and vegetables",
     category: "Best",
     date: "2025-09-28",
     author: "Editor",
     location: "Granville Island Public Market",
-    url: "#",
+    url: "/pages/posts/BigWay/bigway.html",
     tag: ["Street Food", "Lunch"]
   },
   {
     id: 7,
     title: "Heading-S: Late-Night Eats You Shouldn’t Miss",
     excerpt:
-      "Body-S: The ultimate after-hours food spots to satisfy cravings long after sunset.",
+      "Body-S: Explore farmers’ markets filled with local produce, artisan crafts, and friendly faces.",
     image: "https://picsum.photos/800/450?random=7",
     alt: "Neon-lit street with ramen and dessert shops open late",
     category: "Best",
