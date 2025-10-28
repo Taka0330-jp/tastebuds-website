@@ -85,16 +85,16 @@ export const posts = [
   },
   {
     id: 7,
-    title: "Heading-S: Late-Night Eats You Shouldn’t Miss",
+    title: "How Spaghetti Became the Most Famous Food in the World",
     excerpt:
-      "Body-S: Explore farmers’ markets filled with local produce, artisan crafts, and friendly faces.",
-    image: "https://picsum.photos/800/450?random=7",
+      "At its core, spaghetti is just pasta, sauce, and maybe a sprinkle of cheese. But that’s the beauty of it.",
+    image: "/pages/posts/Spaghetti/spa1.jpg",
     alt: "Neon-lit street with ramen and dessert shops open late",
     category: "Best",
     date: "2025-09-27",
-    author: "Foodie",
-    location: "Downtown Vancouver",
-    url: "#",
-    tag: ["Dinner", "Dessert", "Street Food"]
+    author: "Bryan Vo",
+    location: "",
+    url: "/pages/posts/Spaghetti/Spaghetti.html",
+    tag: ["Dinner", "Fan Facts", "Street Food"]
   }
 ];
