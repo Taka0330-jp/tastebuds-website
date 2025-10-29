@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="../../../styles/BlogPost/blog.css">
 
   <script src="/scripts/hamburger.js" defer></script>
+  <script type="module" src="/scripts/comment.js"></script>
 </head>
 
 <body>
@@ -137,6 +138,36 @@
         </ul>
       </aside> -->
     </div>
+
+    <!-- comment form  -->
+    <section class="comment">
+      <div class="comment__container">
+        <form class="comment__form" id="commentForm" action="#" method="post">
+          <div class="comment__group">
+            <input type="text" name="name" placeholder="Name" required />
+          </div>
+          <div class="comment__group">
+            <textarea name="comment" placeholder="Feel free to share your thought!" required></textarea>
+          </div>
+          <button type="submit" class="comment__submit">Submit</button>
+        </form>
+
+        <!-- user comment -->
+        <div class="comment__list" id="commentList"></div>
+        <template id="commentItemTpl">
+          <article class="cmt">
+            <div class="cmt__avatar" aria-hidden="true"><img src="/Assets/icons/tastebuds-guy.svg" alt=""></div>
+            <div class="cmt__main">
+              <header class="cmt__meta">
+                <h3 class="cmt__name"></h3>
+                <time class="cmt__date" datetime=""></time>
+              </header>
+              <p class="cmt__body"></p>
+            </div>
+          </article>
+        </template>
+      </div>
+    </section>
   </main>
 
   <footer>
