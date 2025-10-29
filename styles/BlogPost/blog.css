@@ -109,6 +109,120 @@
 .blog__sidebar-list a:hover {
   text-decoration: underline;
 }
+.blog .comment {
+  background: #d4d4d4;
+  padding: 3rem 1.5rem;
+}
+.blog .comment__container {
+  max-width: 820px;
+  margin: 0 auto;
+}
+.blog .comment__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.blog .comment__group {
+  width: 100%;
+}
+.blog .comment input {
+  max-width: 250px;
+}
+.blog .comment input,
+.blog .comment textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: none;
+  border-radius: 10px;
+  background: #fff;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06) inset;
+}
+.blog .comment textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+.blog .comment__submit {
+  align-self: flex-end;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.blog .comment__submit:hover {
+  opacity: 0.75;
+}
+.blog .comment__list {
+  margin-top: 2rem;
+}
+@media (max-width: 640px) {
+  .blog .comment {
+    padding: 2rem 1rem;
+  }
+}
+.blog .comment__list {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.blog .cmt {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.blog .cmt__avatar {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.blog .cmt__avatar img {
+  width: 60%;
+  height: 60%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.blog .cmt__main {
+  flex: 1;
+}
+.blog .cmt__meta {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.8rem;
+  margin-bottom: 0.4rem;
+}
+.blog .cmt__name {
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+.blog .cmt__date {
+  font-size: 0.9rem;
+  color: #888;
+}
+.blog .cmt__body {
+  line-height: 1.6;
+  color: #111;
+  font-size: 1rem;
+}
+@media (max-width: 640px) {
+  .blog .cmt {
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+  .blog__avatar {
+    width: 45px;
+    height: 45px;
+  }
+}
 @media (max-width: 860px) {
   .blog__container {
     grid-template-columns: 1fr;
