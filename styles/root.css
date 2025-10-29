@@ -52,6 +52,7 @@ ul {
   /* 40–48px */
   --fs-heading-m-bold: clamp(2rem, 4vw, 2.25rem);
   /* 32–36px */
+  --fs-blog-post-display: clamp(1.75rem, 5vw, 2.75rem);
   --fs-heading-m: clamp(2rem, 4vw, 2.25rem);
   --fs-heading-s: clamp(1.25rem, 2.5vw, 1.5rem);
   /* 20–24px */
