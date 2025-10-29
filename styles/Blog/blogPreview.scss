@@ -93,6 +93,7 @@ main {
                         margin: 0;
                         font-size: var(--fs-heading-s);
                         line-height: 1.2;
+                        font-weight: 400;
                     }
                 }
 
@@ -183,14 +184,18 @@ main {
                 }
             }
 
-            /* レスポンシブ（画像を上、テキストを下に） */
+
             @media (max-width: 768px) {
                 .blog-card {
                     height: auto;
 
+                    &__title {
+                        height: 80px;
+                    }
+
                     &__content {
                         flex-direction: column;
-                        height: auto
+                        height: auto;
                     }
 
                     &__image {
