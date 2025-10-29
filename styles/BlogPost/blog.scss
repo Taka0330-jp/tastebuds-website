@@ -50,8 +50,10 @@
 
     /* Each article section */
     &__section {
-      &+& {
-        margin-top: 32px;
+
+      h2 {
+        margin-top: 1rem;
+        font-weight: 500;
       }
 
       .post__image {
@@ -60,7 +62,7 @@
         object-fit: cover;
         display: block;
         border-radius: 2px;
-        margin: 8px 0 14px;
+        margin: .5rem 0 3rem;
       }
 
       .post__subtitle {
@@ -75,6 +77,11 @@
         font-size: 14px;
         line-height: 1.7;
         color: var(--color-text, #2F2D2E);
+        margin: 1rem auto 2rem;
+      }
+
+      .post__address {
+        margin-bottom: 1rem;
       }
     }
 

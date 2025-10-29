@@ -48,8 +48,9 @@
   gap: 6px;
   margin: 1.5rem auto;
 }
-.blog .post__section + .blog .post__section {
-  margin-top: 32px;
+.blog .post__section h2 {
+  margin-top: 1rem;
+  font-weight: 500;
 }
 .blog .post__section .post__image {
   width: 100%;
@@ -58,7 +59,7 @@
      object-fit: cover;
   display: block;
   border-radius: 2px;
-  margin: 8px 0 14px;
+  margin: 0.5rem 0 3rem;
 }
 .blog .post__section .post__subtitle {
   font-size: 18px;
@@ -71,6 +72,10 @@
   font-size: 14px;
   line-height: 1.7;
   color: var(--color-text, #2F2D2E);
+  margin: 1rem auto 2rem;
+}
+.blog .post__section .post__address {
+  margin-bottom: 1rem;
 }
 .blog .post__footer .post__footer-text a {
   text-decoration: underline;
