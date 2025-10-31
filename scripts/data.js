@@ -4,7 +4,7 @@ export const posts = [
     title: "Boba Boom: How Vancouver Fell in Love with Bubble Tea",
     excerpt:
       "Bubble tea is everywhere in Vancouver. How did this sweet, chewy drink take over the world?",
-    image: "/pages/posts/Boba Boom/Boba Boom Cover.jpg",
+    image: "/pages/posts/Boba Boom/Boba Boom Cover.webp",
     alt: "The store of chicha-san-chen-bubble-tea-cambie",
     category: "Recent",
     date: "2025-10-14",
@@ -46,7 +46,7 @@ export const posts = [
     title: "Do you know Dim Sum Literally Means “Touch the Heart”?",
     excerpt:
       "If you grew up in Hong Kong or have shared a Sunday dim sum brunch in Vancouver, you know there’s nothing like it — the laughter, the chatter, the steam, and the comfort of home.",
-    image: "/pages/posts/Dim Sum/dim-sum-cover.jpg",
+    image: "/pages/posts/Dim Sum/dim-sum-cover.webp",
     alt: "Bowl of steaming ramen with egg and green onions",
     category: "Recent",
     date: "2025-10-03",
@@ -74,7 +74,7 @@ export const posts = [
     title: "Why BigWay Hotpot Is So Popular in Vancouver?",
     excerpt:
       "Vancouver is a multicultural city, especially with large Chinese and Vietnamese communities.",
-    image: "/pages/posts/BigWay/bigway1.jpg",
+    image: "/pages/posts/BigWay/bigway1.webp",
     alt: "Outdoor farmers market with colorful fruits and vegetables",
     category: "Best",
     date: "2025-09-28",
@@ -88,7 +88,7 @@ export const posts = [
     title: "How Spaghetti Became the Most Famous Food in the World",
     excerpt:
       "At its core, spaghetti is just pasta, sauce, and maybe a sprinkle of cheese. But that’s the beauty of it.",
-    image: "/pages/posts/Spaghetti/spa1.jpg",
+    image: "/pages/posts/Spaghetti/spa1.webp",
     alt: "Neon-lit street with ramen and dessert shops open late",
     category: "Best",
     date: "2025-09-27",
