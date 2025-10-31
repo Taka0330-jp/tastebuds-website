@@ -83,7 +83,7 @@ main .content .blog-grid .blog-card__title {
 }
 main .content .blog-grid .blog-card__title h2 {
   margin: 0;
-  font-size: var(--fs-heading-s);
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
   line-height: 1.2;
   font-weight: 400;
 }
