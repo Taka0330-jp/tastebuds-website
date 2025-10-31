@@ -8,7 +8,7 @@
   align-items: center;
   min-height: 70vh;
   padding: 4rem 2rem;
-  background: url(/Assets/images/hero-picture.jpeg) center/cover no-repeat;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0) 100%), url(/Assets/images/hero-picture-2.webp) center/cover no-repeat;
 }
 @media (max-width: 768px) {
   .hero {
@@ -22,12 +22,12 @@
 .hero .text-content h1 {
   font-size: var(--fs-heading-display);
   color: var(--color-text-w);
+  font-weight: var(--fw-bold);
 }
-.hero .text-content h2 {
+.hero .text-content p {
   font-size: var(--fs-body-m);
-  font-weight: 200;
   color: var(--color-text-w);
-  padding: 1rem 0;
+  padding: 2rem 0 1rem;
 }
 .hero .text-content .hero-cta {
   padding: 1rem 0;
@@ -297,6 +297,8 @@
 .best-blog .best-grid img {
   width: 100%;
   height: 40%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .best-blog .best-grid .text-container {
   width: 100%;

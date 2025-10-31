@@ -10,6 +10,7 @@ h1,
 h2,
 h3 {
   font-family: var(--font-heading);
+  list-style: var(--lh-heading);
 }
 
 h4,
@@ -17,6 +18,7 @@ p,
 span,
 a {
   font-family: var(--font-body);
+  line-height: var(--lh-body);
 }
 
 main {
@@ -45,9 +47,8 @@ ul {
   --font-heading: "Rubik", sans-serif;
   --font-body: "Inter", sans-serif;
 
-  /* ===========================
-     HEADING
-  ============================ */
+  /*///////// FONT-SIZE ////////*/
+  /*HEADING*/
   --fs-heading-display: clamp(2.5rem, 5vw, 3rem);
   /* 40–48px */
   --fs-heading-m-bold: clamp(2rem, 4vw, 2.25rem);
@@ -57,9 +58,7 @@ ul {
   --fs-heading-s: clamp(1.25rem, 2.5vw, 1.5rem);
   /* 20–24px */
 
-  /* ===========================
-     BODY
-  ============================ */
+  /* BODY*/
   --fs-body-l: clamp(1.25rem, 2.5vw, 1.5rem);
   /* 20–24px */
   --fs-body-m: clamp(1rem, 2vw, 1.25rem);
@@ -67,17 +66,20 @@ ul {
   --fs-body-s: clamp(0.875rem, 1.5vw, 1rem);
   /* 14–16px */
 
-  /* ===========================
-     LINK
-  ============================ */
+  /* LINK */
   --fs-link-l: clamp(1rem, 2vw, 1.25rem);
   /* 16–20px */
   --fs-link-s: clamp(0.875rem, 1.5vw, 1rem);
   /* 14–16px */
 
-  /* ===========================
-     LINE HEIGHT
-  ============================ */
+  /* /////////////FONT-WEIGHT /////////////*/
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* LINE HEIGHT*/
   --lh-heading: 1.2;
   --lh-body: 1.6;
 }
