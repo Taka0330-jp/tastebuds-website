@@ -37,6 +37,10 @@ main .welcome__image {
   display: flex;
   justify-content: flex-end;
 }
+main .welcome__image img {
+  width: 300px;
+  height: 300px;
+}
 @media (max-width: 768px) {
   main .welcome__image {
     justify-content: center;
