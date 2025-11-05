@@ -6,7 +6,7 @@ export const posts = [
       "Bubble tea is everywhere in Vancouver. How did this sweet, chewy drink take over the world?",
     image: "/pages/posts/Boba Boom/Boba Boom Cover.webp",
     alt: "The store of chicha-san-chen-bubble-tea-cambie",
-    category: "Recent",
+    category: "",
     date: "2025-10-14",
     author: "Esme Chan",
     location: "",
@@ -20,7 +20,7 @@ export const posts = [
       "Exciting news for dessert lovers! The UK’s premium dessert brand Heavenly Desserts is officially making its way to Vancouver’s West End.",
     image: "/pages/posts/Heavenly Desserts/Heavenly-dessert.avif",
     alt: "The store of Heavenly Desserts",
-    category: "Recent",
+    category: "",
     date: "2025-10-13",
     author: "Esme Chan",
     location: "Vancouver West",
@@ -34,7 +34,7 @@ export const posts = [
       "In a city fueled by caffeine and rain, coffee is Vancouver’s love language — from cozy Mount Pleasant cafés to iced drinks on Commercial Drive.",
     image: "/pages/posts/Coffee Order/americano.webp",
     alt: "a glass of americano",
-    category: "Recent",
+    category: "",
     date: "2025-10-05",
     author: "Esme Chan",
     location: "",
@@ -48,7 +48,7 @@ export const posts = [
       "If you grew up in Hong Kong or have shared a Sunday dim sum brunch in Vancouver, you know there’s nothing like it — the laughter, the chatter, the steam, and the comfort of home.",
     image: "/pages/posts/Dim Sum/dim-sum-cover.webp",
     alt: "Bowl of steaming ramen with egg and green onions",
-    category: "",
+    category: "Recent",
     date: "2025-10-03",
     author: "Esme Chan",
     location: "",
@@ -110,5 +110,33 @@ export const posts = [
     location: "",
     url: "/pages/posts/Halloween/Halloween.html",
     tag: ["Fan Facts"]
+  },
+  {
+    id: 9,
+    title: "Where Did Brunch Come From?",
+    excerpt:
+      "From Victorian hangover cure to global weekend ritual, discover how brunch became everyone’s favorite lazy-day tradition.",
+    image: "/pages/posts/Brunch/Breakfast-board27.webp",
+    alt: "",
+    category: "Recent",
+    date: "2025-10-29",
+    author: "Andrena Yacoub",
+    location: "",
+    url: "/pages/posts/Brunch/Brunch.html",
+    tag: ["Fan Facts","Brunch"]
+  },
+  {
+    id: 10,
+    title: "Vancouver: The Sushi Capital Outside Japan",
+    excerpt:
+      "From Victorian hangover cure to global weekend ritual, discover how brunch became everyone’s favorite lazy-day tradition.",
+    image: "/pages/posts/VanSushi/Sushi-sushi.webp",
+    alt: "",
+    category: "Recent",
+    date: "2025-11-01",
+    author: "Andrena Yacoub",
+    location: "",
+    url: "/pages/posts/VanSushi/Van-sushi.html",
+    tag: ["Fan Facts","Sushi"]
   }
 ];
