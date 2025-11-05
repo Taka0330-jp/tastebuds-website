@@ -48,7 +48,7 @@ export const posts = [
       "If you grew up in Hong Kong or have shared a Sunday dim sum brunch in Vancouver, you know there’s nothing like it — the laughter, the chatter, the steam, and the comfort of home.",
     image: "/pages/posts/Dim Sum/dim-sum-cover.webp",
     alt: "Bowl of steaming ramen with egg and green onions",
-    category: "Recent",
+    category: "",
     date: "2025-10-03",
     author: "Esme Chan",
     location: "",
@@ -96,5 +96,19 @@ export const posts = [
     location: "",
     url: "/pages/posts/Spaghetti/Spaghetti.html",
     tag: ["Dinner", "Fan Facts", "Street Food"]
+  },
+  {
+    id: 8,
+    title: "From Scaring Ghosts to Sharing Sweets: The Ancient Roots of Halloween",
+    excerpt:
+      "Discover how an ancient Celtic harvest festival evolved into the candy-filled celebration we know today.",
+    image: "/pages/posts/Halloween/Pumpkin.webp",
+    alt: "",
+    category: "Recent",
+    date: "2025-10-22",
+    author: "Andrena Yacoub",
+    location: "",
+    url: "/pages/posts/Halloween/Halloween.html",
+    tag: ["Fan Facts"]
   }
 ];
