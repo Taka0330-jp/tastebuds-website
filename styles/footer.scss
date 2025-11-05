@@ -1,0 +1,129 @@
+.footer {
+    background-color: var(--color-secondary);
+
+    .container {
+        padding: 4rem 6rem;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+
+        @media (max-width:768px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 4rem;
+            padding: 2rem 3rem;
+        }
+
+        &__logo {
+
+            grid-column: 1/ 2;
+
+            @media (max-width:768px) {
+                align-self: center;
+            }
+
+
+
+            img {
+                width: 200px;
+                height: auto;
+                pointer-events: none;
+            }
+        }
+
+        &__links {
+            grid-column: 3/ -1;
+            color: var(--color-text-w);
+
+            .social-media {
+                display: flex;
+                gap: 2rem;
+                border-bottom: 2px solid #b2b2b2;
+
+                img {
+                    padding-bottom: 1rem;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        opacity: 0.6;
+                    }
+                }
+
+                @media (max-width:768px) {
+                    justify-content: center;
+                }
+
+            }
+
+            .main-links {
+                padding: 2rem 0 2rem;
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+                justify-content: space-between;
+
+                @media (max-width:768px) {
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    gap: 1rem;
+                }
+
+
+                .page-link {
+                    display: flex;
+                    gap: 1rem;
+
+                    a {
+                        transition: all 0.3s ease;
+
+                        &:hover {
+                            opacity: 0.6;
+                        }
+                    }
+                }
+
+                form {
+                    display: flex;
+                    align-items: center;
+                    background-color: #fff;
+                    justify-content: space-between;
+                    width: 300px;
+
+                    @media (max-width:768px) {
+                        width: 100%;
+                    }
+
+                    input {
+                        outline: none;
+                        padding: 10px;
+                        background-color: transparent;
+                        border: none;
+                        width: 100%;
+
+                    }
+
+                    button {
+                        background-color: transparent;
+                        border: none;
+                        cursor: pointer;
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+
+            .sub-links {
+                display: flex;
+                gap: 1rem;
+                font-size: 14px;
+                color: #b2b2b2;
+
+                p {
+                    margin-left: auto;
+                }
+            }
+
+        }
+    }
+}
