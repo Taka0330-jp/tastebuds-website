@@ -243,6 +243,7 @@ main .subscribe .container__form .email__input {
   padding: 10px;
   border: 1px solid #000;
   outline: none;
+  border-radius: 0;
 }
 
 main .subscribe .container__form .email__btn {
@@ -260,7 +261,6 @@ main .subscribe .container__form .email__btn {
 
 footer {
   margin-top: auto;
-  /* 常に最下部へ押し下げる */
 }
 
 @media (max-width:960px) {

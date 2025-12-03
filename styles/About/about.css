@@ -14,9 +14,11 @@ main .welcome {
   width: 100%;
   max-width: 1200px;
   margin-inline: auto;
+  margin: 10rem auto;
 }
 @media (max-width: 768px) {
   main .welcome {
+    margin-top: 2rem;
     grid-template-columns: 1fr;
   }
 }
@@ -47,6 +49,7 @@ main .welcome__image img {
   }
 }
 main .about-us {
+  margin-top: 10rem;
   padding: 2rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -118,7 +121,7 @@ main .tag-line .text-container__goal-subtext {
   font-style: italic;
 }
 main .share {
-  margin: 1.5rem 0 1.5rem;
+  margin: 10rem 0rem;
   padding: 0 1rem 1rem 0;
   width: 100%;
   display: flex;
@@ -144,6 +147,8 @@ main .share__container .icons-container {
   gap: 1rem;
   align-items: center;
   margin: 0 auto;
+  opacity: 0;
+  transform: translateY(40px);
 }
 @media (max-width: 768px) {
   main .share__container .icons-container {
@@ -301,4 +306,20 @@ main .subscribe .container__form .email__btn {
   cursor: pointer;
   border: none;
   padding: 1rem;
+  text-wrap: nowrap;
+}
+
+.action {
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }/*# sourceMappingURL=about.css.map */

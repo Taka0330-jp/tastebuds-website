@@ -14,8 +14,10 @@ main {
         width: 100%;
         max-width: 1200px;
         margin-inline: auto;
+        margin: 10rem auto;
 
         @media(max-width:768px) {
+            margin-top: 2rem;
             grid-template-columns: 1fr;
         }
 
@@ -51,6 +53,7 @@ main {
     }
 
     .about-us {
+        margin-top: 10rem;
         padding: 2rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -132,7 +135,7 @@ main {
     }
 
     .share {
-        margin: 1.5rem 0 1.5rem;
+        margin: 10rem 0rem;
         padding: 0 1rem 1rem 0;
         width: 100%;
         display: flex;
@@ -162,12 +165,16 @@ main {
                 gap: 1rem;
                 align-items: center;
                 margin: 0 auto;
+                opacity: 0;
+                transform: translateY(40px);
 
 
                 @media (max-width:768px) {
                     grid-template-columns: repeat(2, 1fr);
                     grid-template-rows: repeat(2, 1fr);
                 }
+
+
 
                 &__icon {
                     width: 100%;
@@ -345,6 +352,7 @@ main {
                         cursor: pointer;
                         border: none;
                         padding: 1rem;
+                        text-wrap: nowrap;
                     }
                 }
 
@@ -353,4 +361,21 @@ main {
         }
     }
 
+}
+
+
+.action {
+    animation: fadeInUp 1.5s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
