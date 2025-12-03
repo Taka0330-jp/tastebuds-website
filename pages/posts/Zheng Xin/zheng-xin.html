@@ -13,6 +13,8 @@
 
     <script src="/scripts/hamburger.js" defer></script>
     <script type="module" src="/scripts/comment.js"></script>
+    <script type="module" src="/scripts/data.js"></script>
+    <script type="module" src="/scripts/blogLink.js"></script>
 </head>
 
 <body>
@@ -61,14 +63,15 @@
 
     <main class="blog">
         <div class="blog__container">
-            <section>
+            <section class="post">
                 <div class="post__header">
                     <h1>
                         Enjoy a Taiwanese-style chicken burger at Zhengxin Chicken Steak
                     </h1>
                     <p>Taka Kondo - October 19, 2025</p>
                 </div>
-
+                <div class="contents">
+                    <div class="contents__articles">
                 <article class="post__section">
                     <img class="post__image" src="ZHNGXIN_outside.webp" alt="" loading="lazy" width="800" height="600">
                     <p class="post__text">
@@ -101,28 +104,30 @@
                     </p>
                     <img class="post__image" src="Monk Fruit Tea.jpg" alt="Brunch & elegant desserts" loading="lazy"
                         width="800" height="600">
-                    <article class="post__section">
+                </article>
 
-                        <h2>The atmosphere inside the restaurant</h2>
-                        <p class="post__text">
-                            The interior has a bright, pop atmosphere and is filled with a liveliness reminiscent of
-                            Taiwanese street food culture.
-                            The red and yellow interior is accented by a glowing neon sign featuring a chicken
-                            character, creating a fun, theme park-like atmosphere.
-                            The ceiling lighting is bright, and the menu is clearly displayed above the counter.
-                            Green chairs and white tables create a clean yet welcoming atmosphere.
-                            It was a bright and friendly space where you could easily stop by, whether alone or with a
-                            group.
+                <article class="post__section">
 
-                        </p>
-                        <img class="post__image" src="inside.png" alt="Brunch & elegant desserts" loading="lazy"
-                            width="800" height="600">
-                        <p class="post__text">Zhengxin recreates authentic Taiwanese street food.
-                            Crispy chicken burgers paired with subtly sweet chrysanthemum tea.
-                            For anyone in Vancouver craving that “Taiwan night market vibe,” this is a spot I highly
-                            recommend.
-                        </p>
-                    </article>
+                    <h2>The atmosphere inside the restaurant</h2>
+                    <p class="post__text">
+                        The interior has a bright, pop atmosphere and is filled with a liveliness reminiscent of
+                        Taiwanese street food culture.
+                        The red and yellow interior is accented by a glowing neon sign featuring a chicken
+                        character, creating a fun, theme park-like atmosphere.
+                        The ceiling lighting is bright, and the menu is clearly displayed above the counter.
+                        Green chairs and white tables create a clean yet welcoming atmosphere.
+                        It was a bright and friendly space where you could easily stop by, whether alone or with a
+                        group.
+
+                    </p>
+                    <img class="post__image" src="inside.png" alt="Brunch & elegant desserts" loading="lazy"
+                        width="800" height="600">
+                    <p class="post__text">Zhengxin recreates authentic Taiwanese street food.
+                        Crispy chicken burgers paired with subtly sweet chrysanthemum tea.
+                        For anyone in Vancouver craving that “Taiwan night market vibe,” this is a spot I highly
+                        recommend.
+                    </p>
+                </article>
 
                     <div>
                         <hr>
@@ -139,20 +144,17 @@
                             Address: 5105 Kingsway, Burnaby, V5G 1L7, BC
                         </p>
                     </div>
+                    </div>
+                    <div class="contents__aside">
+                        <aside class="sidebar">
+                            <h2 class="sidebar__title">Recent Posts</h2>
+                            <ul class="sidebar__list"></ul>
+                        </aside>
+                    </div>
+                </div>
 
 
             </section>
-
-            <!-- <aside class="blog__sidebar">
-        <h2 class="blog__sidebar-title">Recent Posts</h2>
-        <ul class="blog__sidebar-list">
-          <li><a href="#">Big Way</a></li>
-          <li><a href="#">Gyubee</a></li>
-          <li><a href="#">Cactus Club Cafe</a></li>
-          <li><a href="#">Cactus Club Cafe</a></li>
-          <li><a href="#">Cactus Club Cafe</a></li>
-        </ul>
-      </aside> -->
         </div>
         <!-- comment form  -->
         <section class="comment">

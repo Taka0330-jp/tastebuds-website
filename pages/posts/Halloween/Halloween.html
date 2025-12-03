@@ -13,6 +13,8 @@
 
     <script src="/scripts/hamburger.js" defer></script>
     <script type="module" src="/scripts/comment.js"></script>
+    <script type="module" src="/scripts/data.js"></script>
+    <script type="module" src="/scripts/blogLink.js"></script>
 </head>
 
 <body>
@@ -69,105 +71,142 @@
                     </p>
                 </div>
 
-                <article class="post__section">
-                    <img class="post__image" src="Pumpkin.webp"
-                        alt="Four people holding cups of bubble tea from Macu Tea inside a Vancouver bubble tea shop."
-                        loading="lazy" width="800" height="600">
-
-                    <p class="post__text">
-                        Halloween might be known today for costumes, candy, and spooky decorations, but its story
-                        stretches back over 2,000 years to the Celtic festival of Samhain (pronounced sow-in). Long
-                        before carved pumpkins and trick-or-treating, Samhain marked the end of the harvest season and
-                        the beginning of winter — a time when people believed the line between the living and the dead
-                        grew thin.
-                        The Celts, who lived in what is now Ireland, the UK, and northern France, celebrated Samhain
-                        around November 1. They believed that on the night before, spirits could cross over into the
-                        world of the living. To protect themselves, people lit large bonfires, made offerings to their
-                        gods, and wore disguises — often animal skins or masks — to trick wandering spirits into leaving
-                        them alone. These early costumes were meant not for fun, but for safety and respect toward
-                        supernatural forces.
-
-                    </p>
-                </article>
-
-                <article class="post__section">
-                    <img class="post__image" src="kids-trick-or-treat-buckets-7001cba91aa944ce8f22c9d16467970a.webp"
-                        alt="" loading="lazy" width="800" height="600">
-                    <p class="post__text">
-                        What makes dim sum so special is the way it brings people together. Families gather on weekends,
-                        often filling large round tables with friends, grandparents, and children. There is something
-                        deeply communal about passing dishes, sharing stories, and choosing your favorites from rolling
-                        carts filled with steaming dumplings, buns, and pastries. You might reach for a shrimp dumpling,
-                        a bite of siu mai, or a fluffy char siu bao, but the real magic is in the shared experience. It
-                        is food designed for connection, the kind that fills both your stomach and your soul.
-                    </p>
-                </article>
-
-                <article class="post__section">
-                    <img class="post__image" src="Kids-Halloween-Costumes-1-2048x1305.webp" alt="" loading="lazy"
-                        width="800" height="600">
-                    <p class="post__text">
-                        Food played a big part in the festival too. After the harvest, people gathered to feast and give
-                        thanks for the crops that would sustain them through winter. Offerings of food and drink were
-                        also left outside homes to please wandering spirits and ancestors. These customs laid the
-                        foundation for many Halloween traditions we know today, from dressing up to sharing treats.
-                        As Christianity spread through Europe, the church adapted many pagan festivals into its own
-                        calendar. Around the 8th century, Pope Gregory III established November 1 as All Saints’ Day,
-                        also known as All Hallows’ Day, to honor saints and martyrs. The night before became known as
-                        All Hallows’ Eve — which, over time, shortened to “Halloween.” Despite the new religious
-                        meaning, many of the old Samhain customs continued, blending ancient folklore with Christian
-                        practices.
-
-                    </p>
-                </article>
-
-                <article class="post__section">
-                    <img class="post__image" src="Halloween-kids.webp" alt="" loading="lazy" width="800" height="600">
-                    <p class="post__text">
-                        The tradition of trick-or-treating can also be traced back to medieval times. On All Hallows’
-                        Eve, poor families and children in parts of Britain and Ireland practiced “souling,” where they
-                        went door-to-door offering prayers for the dead in exchange for food or coins. Later, in
-                        Scotland and Ireland, children took part in “guising,” dressing up in costumes and performing
-                        songs or jokes for treats. When Irish and Scottish immigrants brought these customs to North
-                        America in the 19th century, they evolved into the modern practice of trick-or-treating.
-                        By the 20th century, Halloween in North America had become a fun, community-centered holiday —
-                        focused less on spirits and more on celebration. Candy companies saw an opportunity, and by the
-                        1950s, handing out sweets had become the main event. Pumpkins replaced turnips for carving
-                        lanterns, inspired by the old Irish legend of “Stingy Jack,” and costume parties became a
-                        tradition for both kids and adults.
-                        Today, Halloween is a blend of ancient superstition, cultural adaptation, and modern creativity.
-                        From spooky ghost stories to endless candy varieties, it connects us to centuries of history
-                        while celebrating imagination and community. Whether you’re scaring ghosts, sharing sweets, or
-                        carving a pumpkin, you’re keeping the spirit of Samhain alive — in your own deliciously fun way.
-
-                    </p>
-                </article>
-
-                <div>
-                    <hr>
-                    <p class="post__footer-text">
-                        <br>
-
-                        For more new and upcoming food spots in Metro Vancouver, follow @TASTEBUDS <a
-                            href="https://www.instagram.com/tastebudsvan/">here</a> , and
-                        subscribe to our
-                        weekly newsletter <a href="/pages/contact.html">here</a>.
-
-                    </p>
-
+                <div class="contents">
+                    <div class="contents__articles">
+                        <article class="post__section">
+                            <img class="post__image" src="Pumpkin.webp"
+                                alt="Four people holding cups of bubble tea from Macu Tea inside a Vancouver bubble tea shop."
+                                loading="lazy" width="800" height="600">
+                            <p class="post__text">
+                                Halloween might be known today for costumes, candy, and spooky decorations, but its
+                                story
+                                stretches back over 2,000 years to the Celtic festival of Samhain (pronounced sow-in).
+                                Long
+                                before carved pumpkins and trick-or-treating, Samhain marked the end of the harvest
+                                season
+                                and
+                                the beginning of winter — a time when people believed the line between the living and
+                                the
+                                dead
+                                grew thin.
+                                The Celts, who lived in what is now Ireland, the UK, and northern France, celebrated
+                                Samhain
+                                around November 1. They believed that on the night before, spirits could cross over into
+                                the
+                                world of the living. To protect themselves, people lit large bonfires, made offerings to
+                                their
+                                gods, and wore disguises — often animal skins or masks — to trick wandering spirits into
+                                leaving
+                                them alone. These early costumes were meant not for fun, but for safety and respect
+                                toward
+                                supernatural forces.
+                            </p>
+                        </article>
+                        <article class="post__section">
+                            <img class="post__image"
+                                src="kids-trick-or-treat-buckets-7001cba91aa944ce8f22c9d16467970a.webp" alt=""
+                                loading="lazy" width="800" height="600">
+                            <p class="post__text">
+                                What makes dim sum so special is the way it brings people together. Families gather on
+                                weekends,
+                                often filling large round tables with friends, grandparents, and children. There is
+                                something
+                                deeply communal about passing dishes, sharing stories, and choosing your favorites from
+                                rolling
+                                carts filled with steaming dumplings, buns, and pastries. You might reach for a shrimp
+                                dumpling,
+                                a bite of siu mai, or a fluffy char siu bao, but the real magic is in the shared
+                                experience.
+                                It
+                                is food designed for connection, the kind that fills both your stomach and your soul.
+                            </p>
+                        </article>
+                        <article class="post__section">
+                            <img class="post__image" src="Kids-Halloween-Costumes-1-2048x1305.webp" alt=""
+                                loading="lazy" width="800" height="600">
+                            <p class="post__text">
+                                Food played a big part in the festival too. After the harvest, people gathered to feast
+                                and
+                                give
+                                thanks for the crops that would sustain them through winter. Offerings of food and drink
+                                were
+                                also left outside homes to please wandering spirits and ancestors. These customs laid
+                                the
+                                foundation for many Halloween traditions we know today, from dressing up to sharing
+                                treats.
+                                As Christianity spread through Europe, the church adapted many pagan festivals into its
+                                own
+                                calendar. Around the 8th century, Pope Gregory III established November 1 as All Saints’
+                                Day,
+                                also known as All Hallows’ Day, to honor saints and martyrs. The night before became
+                                known
+                                as
+                                All Hallows’ Eve — which, over time, shortened to “Halloween.” Despite the new religious
+                                meaning, many of the old Samhain customs continued, blending ancient folklore with
+                                Christian
+                                practices.
+                            </p>
+                        </article>
+                        <article class="post__section">
+                            <img class="post__image" src="Halloween-kids.webp" alt="" loading="lazy" width="800"
+                                height="600">
+                            <p class="post__text">
+                                The tradition of trick-or-treating can also be traced back to medieval times. On All
+                                Hallows’
+                                Eve, poor families and children in parts of Britain and Ireland practiced “souling,”
+                                where
+                                they
+                                went door-to-door offering prayers for the dead in exchange for food or coins. Later, in
+                                Scotland and Ireland, children took part in “guising,” dressing up in costumes and
+                                performing
+                                songs or jokes for treats. When Irish and Scottish immigrants brought these customs to
+                                North
+                                America in the 19th century, they evolved into the modern practice of trick-or-treating.
+                                By the 20th century, Halloween in North America had become a fun, community-centered
+                                holiday
+                                —
+                                focused less on spirits and more on celebration. Candy companies saw an opportunity, and
+                                by
+                                the
+                                1950s, handing out sweets had become the main event. Pumpkins replaced turnips for
+                                carving
+                                lanterns, inspired by the old Irish legend of “Stingy Jack,” and costume parties became
+                                a
+                                tradition for both kids and adults.
+                                Today, Halloween is a blend of ancient superstition, cultural adaptation, and modern
+                                creativity.
+                                From spooky ghost stories to endless candy varieties, it connects us to centuries of
+                                history
+                                while celebrating imagination and community. Whether you’re scaring ghosts, sharing
+                                sweets,
+                                or
+                                carving a pumpkin, you’re keeping the spirit of Samhain alive — in your own deliciously
+                                fun
+                                way.
+                            </p>
+                        </article>
+                        <div>
+                            <hr>
+                            <p class="post__footer-text">
+                                <br>
+                                For more new and upcoming food spots in Metro Vancouver, follow @TASTEBUDS <a
+                                    href="https://www.instagram.com/tastebudsvan/">here</a> , and
+                                subscribe to our
+                                weekly newsletter <a href="/pages/contact.html">here</a>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contents__aside">
+                        <aside class="sidebar">
+                            <h2 class="sidebar__title">Recent Posts</h2>
+                            <ul class="sidebar__list">
+                            </ul>
+                        </aside>
+                    </div>
                 </div>
             </section>
 
-            <!-- <aside class="blog__sidebar">
-                <h2 class="blog__sidebar-title">Recent Posts</h2>
-                <ul class="blog__sidebar-list">
-                    <li><a href="#">Big Way</a></li>
-                    <li><a href="#">Gyubee</a></li>
-                    <li><a href="#">Cactus Club Cafe</a></li>
-                    <li><a href="#">Cactus Club Cafe</a></li>
-                    <li><a href="#">Cactus Club Cafe</a></li>
-                </ul>
-            </aside> -->
+
         </div>
         <!-- comment form  -->
         <section class="comment">

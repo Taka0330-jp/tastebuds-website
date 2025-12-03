@@ -13,6 +13,8 @@
 
     <script src="/scripts/hamburger.js" defer></script>
     <script type="module" src="/scripts/comment.js"></script>
+    <script type="module" src="/scripts/data.js"></script>
+    <script type="module" src="/scripts/blogLink.js"></script>
 </head>
 
 <body>
@@ -68,8 +70,9 @@
                     </h1>
                     <p>Esme Chan - October 24, 2025 - Local Food News</p>
                 </div>
-
-                <article class="post__section">
+                <div class="contents">
+                    <div class="contents__articles">
+                        <article class="post__section">
                     <img class="post__image" src="Boba Boom Cover.jpg"
                         alt="Four people holding cups of bubble tea from Macu Tea inside a Vancouver bubble tea shop."
                         loading="lazy" width="800" height="600">
@@ -129,33 +132,28 @@
                     </p>
                 </article>
 
-                <div>
-                    <hr>
-                    <p class="post__footer-text">
-                        <br>
+                        <div>
+                            <hr>
+                            <p class="post__footer-text">
+                                <br>
 
-                        For more new and upcoming food spots in Metro Vancouver, follow @TASTEBUDS <a
-                            href="https://www.instagram.com/tastebudsvan/">here</a> , and
-                        subscribe to our
-                        weekly newsletter <a href="/pages/contact.html">here</a>.
+                                For more new and upcoming food spots in Metro Vancouver, follow @TASTEBUDS <a
+                                    href="https://www.instagram.com/tastebudsvan/">here</a> , and
+                                subscribe to our
+                                weekly newsletter <a href="/pages/contact.html">here</a>.
 
-                    </p>
+                            </p>
 
+                        </div>
+                    </div>
+                    <div class="contents__aside">
+                        <aside class="sidebar">
+                            <h2 class="sidebar__title">Recent Posts</h2>
+                            <ul class="sidebar__list"></ul>
+                        </aside>
+                    </div>
                 </div>
-
-
             </section>
-
-            <!-- <aside class="blog__sidebar">
-        <h2 class="blog__sidebar-title">Recent Posts</h2>
-        <ul class="blog__sidebar-list">
-          <li><a href="#">Big Way</a></li>
-          <li><a href="#">Gyubee</a></li>
-          <li><a href="#">Cactus Club Cafe</a></li>
-          <li><a href="#">Cactus Club Cafe</a></li>
-          <li><a href="#">Cactus Club Cafe</a></li>
-        </ul>
-      </aside> -->
         </div>
         <!-- comment form  -->
         <section class="comment">
