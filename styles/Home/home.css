@@ -74,9 +74,15 @@
   padding: 4rem 3rem 0;
   /* ===== Responsive ===== */
 }
-@media (max-width: 968px) {
+@media (max-width: 360px) {
   .recent-blog {
     padding: 0;
+  }
+}
+@media (max-width: 968px) {
+  .recent-blog {
+    max-width: 768px;
+    margin-inline: auto;
   }
 }
 .recent-blog #section-head {
@@ -263,9 +269,15 @@
   padding: 0rem 3rem 0;
   margin-bottom: 3rem;
 }
-@media (max-width: 968px) {
+@media (max-width: 360px) {
   .best-blog {
     padding: 0;
+  }
+}
+@media (max-width: 968px) {
+  .best-blog {
+    max-width: 768px;
+    margin-inline: auto;
   }
 }
 .best-blog .section-head {

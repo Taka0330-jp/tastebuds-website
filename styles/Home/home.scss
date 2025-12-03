@@ -83,8 +83,13 @@
 .recent-blog {
     padding: 4rem 3rem 0;
 
-    @media (max-width:968px) {
+    @media (max-width:360px) {
         padding: 0;
+    }
+
+    @media (max-width:968px) {
+        max-width: 768px;
+        margin-inline: auto;
     }
 
     #section-head {
@@ -314,8 +319,13 @@
     padding: 0rem 3rem 0;
     margin-bottom: 3rem;
 
-    @media (max-width:968px) {
+    @media (max-width:360px) {
         padding: 0;
+    }
+
+    @media (max-width:968px) {
+        max-width: 768px;
+        margin-inline: auto;
     }
 
 
