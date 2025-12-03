@@ -59,15 +59,55 @@ header nav .social {
     gap: 1rem;
 }
 
+header nav .social a {
+    position: relative;
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--header-text, #fff);
+    transition: color 0.2s ease;
+}
+
+header nav .social a::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: currentColor;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+header nav .social a[href*="instagram"]::after {
+    -webkit-mask-image: url("../Assets/icons/Insta-footer.svg");
+    mask-image: url("../Assets/icons/Insta-footer.svg");
+}
+
+header nav .social a[href*="tiktok"]::after {
+    -webkit-mask-image: url("../Assets/icons/tiktok-footer.svg");
+    mask-image: url("../Assets/icons/tiktok-footer.svg");
+}
+
+header nav .social a:hover,
+header nav .social a:focus-visible {
+    color: var(--color-primary);
+}
+
+header nav .social img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
 .right {
     display: flex;
     gap: 3rem;
     align-items: center;
-}
-
-.social img {
-    height: 1.5rem;
-    width: 1.5rem;
 }
 
 
