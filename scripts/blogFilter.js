@@ -15,7 +15,6 @@ let state = {
     query:""
 }
 
-// 全記事データ（posts）からタグ名だけを抜き出して、重複を除き、「All」を先頭に追加した配列を作成
 const allTags = ["All", ...new Set(posts.flatMap(p => p.tag))];
 
 

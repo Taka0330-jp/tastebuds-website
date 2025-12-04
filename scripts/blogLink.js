@@ -7,7 +7,10 @@ function renderRecentPosts() {
   const list = document.querySelector(SIDEBAR_LIST_SELECTOR);
   if (!list) return;
 
-  const recentPosts = posts.filter((post) => post.category === RECENT_CATEGORY);
+  const recentPosts = posts
+    .filter((post) => post.category === RECENT_CATEGORY)
+    .sort((a, b) => new Date(b.date) - new Date(a.date))
+    .slice(0, 4);
   const fragment = document.createDocumentFragment();
 
   recentPosts.forEach((post) => {

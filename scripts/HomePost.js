@@ -10,7 +10,9 @@ const bestGrid = document.querySelector(".best-grid");
 
 //Filtered by Category
 
-const recent = posts.filter(p => p.category === "Recent");
+const recent = posts
+  .filter((p) => p.category === "Recent")
+  .sort((a, b) => new Date(b.date) - new Date(a.date));
 const bestPosts = posts.filter(bp => bp.category === "Best");
 
 //Split the array of Recent items into featured for the first item and rest for the subsequent items.
