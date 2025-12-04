@@ -4,11 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TasteBuds surfaces Vancouver’s can’t-miss cafes, street food, and restaurant stories every week.">
+    <meta name="keywords" content="Vancouver food blog, restaurants, TasteBuds, brunch, sushi, dessert">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://tastebuds-website.vercel.app/pages/home.html">
     <meta property="og:title" content="TasteBuds – Food Blog">
     <meta property="og:description" content="Discover Vancouver’s best food spots curated by TasteBuds.">
     <meta property="og:image" content="https://tastebuds-website.vercel.app/Assets/og/og-image.jpg">
+    <meta property="og:image:alt" content="TasteBuds team exploring Vancouver dishes">
     <meta property="og:url" content="https://tastebuds-website.vercel.app/pages/home.html">
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="TasteBuds">
+    <meta property="og:locale" content="en_CA">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@tastebudsvan">
+    <meta name="twitter:title" content="TasteBuds – Vancouver food stories & guides">
+    <meta name="twitter:description" content="Follow TasteBuds for weekly foodie finds, interviews, and guides across Metro Vancouver.">
+    <meta name="twitter:image" content="https://tastebuds-website.vercel.app/Assets/og/og-image.jpg">
     <title>Taste Buds blog site</title>
     <link rel="stylesheet" href="../styles/root.css">
     <link rel="stylesheet" href="../styles/header.css">
@@ -28,13 +40,13 @@
 
             <div class="right">
                 <ul class="menu">
-                    <li><a href="/pages/blogPreview.html">
+                    <li><a href="/pages/blogPreview.html?utm_source=nav&utm_medium=menu&utm_campaign=home">
                             Blog
                         </a></li>
-                    <li><a href="/pages/about.html">
+                    <li><a href="/pages/about.html?utm_source=nav&utm_medium=menu&utm_campaign=home">
                             About
                         </a></li>
-                    <li><a href="/pages/contact.html">
+                    <li><a href="/pages/contact.html?utm_source=nav&utm_medium=menu&utm_campaign=home">
                             Contact
                         </a></li>
 
@@ -48,7 +60,7 @@
 
                 </div>
                 <div>
-                    <a href="/pages/contact.html" class="contact-cta"><span>Let’s Talk</span></a>
+                    <a href="/pages/contact.html?utm_source=nav&utm_medium=button&utm_campaign=home-header" class="contact-cta"><span>Let’s Talk</span></a>
                 </div>
                 <div class="hamburger">
                     <span></span>
@@ -60,22 +72,22 @@
 
         <div class="mobile-nav hide">
             <ul>
-                <li><a href="/pages/blogPreview.html">Blog</a></li>
-                <li><a href="/pages/about.html">About</a></li>
-                <li><a href="/pages/contact.html">Contact</a></li>
+                <li><a href="/pages/blogPreview.html?utm_source=nav&utm_medium=mobile&utm_campaign=home">Blog</a></li>
+                <li><a href="/pages/about.html?utm_source=nav&utm_medium=mobile&utm_campaign=home">About</a></li>
+                <li><a href="/pages/contact.html?utm_source=nav&utm_medium=mobile&utm_campaign=home">Contact</a></li>
             </ul>
         </div>
     </header>
 
     <main>
         <section class="hero">
-            <div class="text-content">å
+            <div class="text-content">
                 <h1>Your guide to Vancouver’s tastiest bites</h1>
                 <p>Hey foodie friends! From hole-in-the-wall dumpling shops to trendy brunch spots,
                     we’re
                     all about sharing the flavors that make this city so delicious.</p>
                 <div class="hero-cta">
-                    <a href="/pages/contact.html" class="contact-cta"><span>Let’s Talk</span></a>
+                    <a href="/pages/contact.html?utm_source=hero&utm_medium=button&utm_campaign=home" class="contact-cta"><span>Let’s Talk</span></a>
                 </div>
             </div>
             <div class="hero-right"></div>
@@ -88,7 +100,7 @@
         <section class="recent-blog">
             <header id="section-head">
                 <h2 id="recent-heading">Recent Post</h2>
-                <a class="more-cta" href="/pages/blogPreview.html">Read more</a>
+                <a class="more-cta" href="/pages/blogPreview.html?utm_source=home&utm_medium=recent-header&utm_campaign=internal-traffic">Read more</a>
             </header>
 
             <div class="recent-grid" data-mount="recent"></div>
@@ -142,7 +154,7 @@
         <section class="best-blog">
             <header class="section-head">
                 <h2>Best In Town</h2>
-                <a class="more-cta" href="/pages/blogPreview.html">Read more</a>
+                <a class="more-cta" href="/pages/blogPreview.html?utm_source=home&utm_medium=best-header&utm_campaign=internal-traffic">Read more</a>
             </header>
             <div class="best-grid" data-mount="best"></div>
             <template id="tplBest">
@@ -167,6 +179,33 @@
                 </article>
 
             </template>
+        </section>
+
+        <section class="social-widget" aria-labelledby="social-widget-heading">
+            <div class="social-widget__header">
+                <h2 id="social-widget-heading">Stay in the TasteBuds loop</h2>
+                <p>Peep what we’re posting and share your own foodie finds directly from the home page.</p>
+            </div>
+            <div class="social-widget__grid">
+                <article class="social-widget__card">
+                    <p class="social-widget__platform">Instagram Spotlight</p>
+                    <p class="social-widget__copy">Swipe through our latest café tours, bento inspo, and behind-the-scenes shoot days.</p>
+                    <a class="social-widget__cta" href="https://www.instagram.com/tastebudsvan/?utm_source=home&utm_medium=widget&utm_campaign=instagram" target="_blank" rel="noopener noreferrer">View @tastebudsvan</a>
+                </article>
+                <article class="social-widget__card">
+                    <p class="social-widget__platform">TikTok Tastings</p>
+                    <p class="social-widget__copy">See quick-hit reviews, budget bites, and ASMR dessert drops across Metro Vancouver.</p>
+                    <a class="social-widget__cta" href="https://www.tiktok.com/@tastebudsvan?utm_source=home&utm_medium=widget&utm_campaign=tiktok" target="_blank" rel="noopener noreferrer">Watch on TikTok</a>
+                </article>
+                <article class="social-widget__card">
+                    <p class="social-widget__platform">Share the love</p>
+                    <p class="social-widget__copy">Tell friends about your latest find with one tap—every share helps local restaurants shine.</p>
+                    <div class="social-widget__share">
+                        <a href="https://twitter.com/intent/tweet?text=I%27m%20reading%20TasteBuds%27%20latest%20Vancouver%20food%20stories!&url=https%3A%2F%2Ftastebuds-website.vercel.app%2Fpages%2Fhome.html" target="_blank" rel="noopener noreferrer">Share on X</a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftastebuds-website.vercel.app%2Fpages%2Fhome.html" target="_blank" rel="noopener noreferrer">Share on Facebook</a>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
     <footer class="footer">
