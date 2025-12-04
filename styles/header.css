@@ -82,13 +82,13 @@ header nav .social a::after {
 }
 
 header nav .social a[href*="instagram"]::after {
-    -webkit-mask-image: url("../Assets/icons/Insta-footer.svg");
-    mask-image: url("../Assets/icons/Insta-footer.svg");
+    -webkit-mask-image: url("../assets/icons/Insta-footer.svg");
+    mask-image: url("../assets/icons/Insta-footer.svg");
 }
 
 header nav .social a[href*="tiktok"]::after {
-    -webkit-mask-image: url("../Assets/icons/tiktok-footer.svg");
-    mask-image: url("../Assets/icons/tiktok-footer.svg");
+    -webkit-mask-image: url("../assets/icons/tiktok-footer.svg");
+    mask-image: url("../assets/icons/tiktok-footer.svg");
 }
 
 header nav .social a:hover,
