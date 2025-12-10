@@ -155,7 +155,7 @@ export const posts = [
   },
   {
     id: 12,
-    title: "Home of the California Roll 🇨🇦➡️🇺🇸",
+    title: "Home of the California Roll ",
     excerpt:
       "Chef Hidekazu Tojo reinvented sushi in 1970s Vancouver, creating the inside-out roll that made millions fall in love with sushi.",
     image: "/pages/posts/California-roll/best-california-roll.webp",
